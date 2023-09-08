@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 5em 2em 0 2em;
+}
+.page-head-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+    /* text-align: right; */
+    line-height: 60px;
+    letter-spacing: 2px;
+    /* background-color: red; */
+    /* margin-bottom: 1em; */
+}
+
+.x-part-and-sign-up {
+    display: flex;
+    /* gap: 30px; */
+    width: 100%;
+    background-color: pink;
+    /* padding: 0 5em; */
+}
+
+.x-logo-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5em;
+    width: 50%;
+    height: 240px;
+}
+
+.x-logo-img {
+    width: 50%;
+    height: 100%;
+}
+
+.sign-up-part {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
