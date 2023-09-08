@@ -126,8 +126,26 @@ body {
     color: #2ba3ed;
 }
 
-.footer-items {
+/* .footer-items {
     
+} */
+
+.footer {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    color: #536471;
+}
+.footer-list-i {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.footer-list-ii {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
 }
 
 /* font-family: 'Manrope', sans-serif; */
