@@ -13,7 +13,7 @@ body {
   display: flex;
   gap: 200px;
   width: 100%;
-  padding: 0.2em 0;
+  padding: 0.2em 0 1em 0;
   position: sticky;
   top: 0;
   /* filter: opacity(1); */
@@ -29,6 +29,7 @@ body {
 
 .exit-icon {
   font-size: 20px;
+  cursor: pointer;
 }
 
 .sign-in-x-logo-div {
@@ -45,7 +46,7 @@ body {
   font-family: "Noto Sans SC", sans-serif;
   font-weight: 700;
   font-size: 25px;
-  /* margin-bottom: 35px; */
+  margin-bottom: 15px;
 }
 
 .welcome-page-btn {
@@ -64,23 +65,88 @@ body {
   background-color: transparent;
 }
 
+#next-btn {
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.or-txt {
+    font-family: "Noto Sans SC", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#google-btn {
+    color: #3c4043;
+    font-size: 13px;
+}
+
+#google-btn:hover {
+    background-color: #eef5f9;
+    transition: all 0.3s ease-in-out ;
+}
+
+#apple-btn {
+    font-family: 'Noto Sans SC', sans-serif;
+    font-weight: 600;
+}
+
 .or-and-x-axis-line {
   font-family: "Noto Sans SC", sans-serif;
   font-size: 10px;
   display: flex;
   align-items: center;
-  gap: 3px;
+  gap: 5px;
+  margin-top: 10px;
 }
 
 .x-axis-line {
-  width: 23%;
+  width: 65%;
   height: 1px;
   background-color: #dadce0;
+  display: flex;
+  align-items: center;
 }
 
 .sign-in-form-sec {
   width: 50%;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 10px;
+  padding: 0 0 0 120px;
+  margin-bottom: 20px;
+}
+
+.sign-in-form-sec-ii {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input {
+    width: 17em;
+    height: 40px;
+    padding-left: 5px;
+    border: 1px solid #dadce0;
+    outline-color: #2ba3ed;
+    border-radius: 3px;
+  }
+
+  .last-sign-in-text {
+    display: flex;
+    gap: 3px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    color: #536471;
+    margin-bottom: 25px; 
+    padding: 0 0 0 120px;
+  }
+
+  .blue-span-text {
+    color: #2ba3ed;
 }
