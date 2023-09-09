@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+body {
+  background-color: #eaf0f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overall {
+  padding: 0.5em 3em;
+  width: 40%;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.date-of-birth {
+  font-family: "Noto Sans SC", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.two-spans {
+  display: flex;
+  flex-direction: column;
+  font-family: "Noto Sans SC", sans-serif;
+  font-weight: 700;
+}
+
+.step-span {
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.create-span {
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+.form-class {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input {
+  width: 28em;
+  height: 40px;
+  padding-left: 5px;
+  border: 1px solid #dadce0;
+  outline-color: #2ba3ed;
+}
+
+.sign-up-note-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 11px;
+  line-height: 14px;
+}
+
+.dob-sel-div {
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+/* font-family: 'Manrope', sans-serif; */
+/* font-family: 'Poppins', sans-serif; */
+/* font-family: 'Noto Sans SC', sans-serif; */
+/* font-family: "TwitterChirp",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; */
