@@ -10,12 +10,17 @@ body {
 }
 
 .overall {
-  padding: 0.5em 3em;
-  width: 40%;
+  padding: 1em 3em 0.5em 1.5em;
+  width: 45%;
   background-color: #ffffff;
   display: flex;
-  flex-direction: column;
+  gap: 30px;
   border-radius: 10px;
+}
+
+.exit-icon {
+    font-size: 20px;
+    cursor: pointer;
 }
 
 .date-of-birth {
@@ -53,18 +58,57 @@ input {
   padding-left: 5px;
   border: 1px solid #dadce0;
   outline-color: #2ba3ed;
+  border-radius: 6px;
 }
 
 .sign-up-note-text {
   font-family: "Poppins", sans-serif;
+  color: #536471;
   font-size: 11px;
   line-height: 14px;
+  margin-bottom: 10px;
 }
 
 .dob-sel-div {
   display: flex;
+  gap: 50px;
+  margin-bottom: 20px;
+  /* padding: ; */
   /* justify-content: space-between; */
 }
+
+.select {
+    padding: 4px 8px 20px 8px;
+    display: flex;
+    border: 1.5px solid #000000;
+    border-radius: 5px;
+}
+
+.select:focus {
+    outline-color: #2ba3ed;
+}
+
+.sele-poin {
+    font-family: 'Noto Sans SC', sans-serif;
+    font-weight: 200;
+    font-size: 15px;
+}
+
+.sign-up-submit-btn {
+    cursor: pointer;
+    border-radius: 25px;
+    padding: 8px 18px;
+    color: #ffffff;
+    background-color: #6c6d6d;
+    border: 1px solid #6c6d6d;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    font-size: 14px;
+    margin-bottom: 30px;
+    width: 90%;
+}
+
+
 
 /* font-family: 'Manrope', sans-serif; */
 /* font-family: 'Poppins', sans-serif; */
