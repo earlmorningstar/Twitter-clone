@@ -42,10 +42,13 @@ body {
 
 .sign-up-part {
     width: 50%;
+    margin-bottom: 20px;
+}
+
+.wel-page-form {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    margin-bottom: 20px;
 }
 
 .join-today-text {
@@ -70,6 +73,15 @@ body {
     gap: 5px;
     text-align: center;
     background-color: transparent;
+}
+
+.wel-page-icon {
+    font-size: 16px;
+}
+
+#google-btn {
+    color: #3c4043;
+    font-size: 13px;
 }
 
 #google-btn:hover {
