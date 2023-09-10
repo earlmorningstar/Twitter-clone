@@ -8,7 +8,6 @@
 
 .homepage {
   display: flex;
-  height: 100vh;
 }
 
 .sidebar-container {
@@ -16,6 +15,7 @@
   overflow-y: scroll;
   background-color: #ffffff;
   color: #fff;
+  height: 100vh;
 }
 
 .sidebar-content {
@@ -53,7 +53,8 @@
 }
 
 #account-circle-line {
-  font-size: 40px;
+  font-size: 35px;
+  color: #646e76;
 }
 
 .sidebar-content-ii {
@@ -61,9 +62,16 @@
 }
 
 .main-content {
+  width: 48%;
   flex-grow: 1;
-  background-color: #f0f0f0;
+  /* background-color: #f0f0f0; */
+  background-color: #ffffff;
 }
+
+/* .main-content-scroll {
+    height: 100%;
+    overflow-y: scroll; 
+} */
 
 .main-content-navbar {
   font-family: "Libre Franklin", sans-serif;
@@ -103,12 +111,50 @@
   transform: scale(1);
 }
 
-/* Define the right sidebar or footer styles */
+.whats-happening-container {
+  display: flex;
+  gap: 10px;
+  padding: 0.5em 1em;
+}
+
+.w-h-account-circle {
+  margin-top: 5px;
+}
+
+.audience-selection-container {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  border: 1px solid #aeb0b4;
+  border-radius: 20px;
+  padding: 1px 7px;
+  width: fit-content;
+  color: #2ba3ed;
+}
+
+.bold-blue-text {
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 700;
+  font-size: 11px;
+  color: #2ba3ed;
+}
+
+.ri-earth-fill {
+  font-size: 13px;
+  color: #2ba3ed;
+}
+
+.globe-and-text {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
 .right-sidebar {
-  width: 38%; /* Adjust the width as needed */
-  background-color: #333; /* Background color */
-  color: #fff; /* Text color */
-  /* Add more styling as needed */
+  width: 38%;
+  background-color: #333;
+  color: #fff;
 }
 
 /* font-family: 'Libre Franklin', sans-serif; */
+/* #dadce0 */
