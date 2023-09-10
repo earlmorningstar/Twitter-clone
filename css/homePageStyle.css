@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.homepage {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar-container {
+    width: 14%;
+    overflow-y: scroll; 
+    background-color: #ffffff; 
+    color: #fff; 
+}
+
+.sidebar-content {
+    padding: 1em 0.5em 1em 5.5em;
+}
+
+.sidebar-item  {
+    font-size: 22px;
+    margin-bottom: 13px;
+    color: #000000;
+}
+
+#x-svg {
+    width: 25px;
+    height: 25px;
+}
+
+#x-tweet-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #2ba3ed;
+    background-color: #2ba3ed;
+    padding: 8px;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.ri-add-line {
+    font-size: 12px;
+}
+
+#account-circle-line{
+    font-size: 40px;
+}
+
+.sidebar-content-ii {
+    padding: 0 1.5em 1em 5em;
+}
