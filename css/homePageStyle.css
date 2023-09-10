@@ -1,58 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .homepage {
-    display: flex;
-    height: 100vh;
+  display: flex;
+  height: 100vh;
 }
 
 .sidebar-container {
-    width: 14%;
-    overflow-y: scroll; 
-    background-color: #ffffff; 
-    color: #fff; 
+  width: 14%;
+  overflow-y: scroll;
+  background-color: #ffffff;
+  color: #fff;
 }
 
 .sidebar-content {
-    padding: 1em 0.5em 1em 5.5em;
+  padding: 1em 0.5em 1em 5.5em;
 }
 
-.sidebar-item  {
-    font-size: 22px;
-    margin-bottom: 13px;
-    color: #000000;
+.sidebar-item {
+  cursor: pointer;
+  font-size: 22px;
+  margin-bottom: 13px;
+  color: #000000;
 }
 
 #x-svg {
-    width: 25px;
-    height: 25px;
+  width: 25px;
+  height: 25px;
 }
 
-#x-tweet-icon{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #2ba3ed;
-    background-color: #2ba3ed;
-    padding: 8px;
-    border-radius: 50%;
-    width: 45px;
-    height: 45px;
-    color: #ffffff;
-    font-size: 20px;
+#x-tweet-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #2ba3ed;
+  background-color: #2ba3ed;
+  padding: 8px;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  color: #ffffff;
+  font-size: 20px;
 }
 
 .ri-add-line {
-    font-size: 12px;
+  font-size: 12px;
 }
 
-#account-circle-line{
-    font-size: 40px;
+#account-circle-line {
+  font-size: 40px;
 }
 
 .sidebar-content-ii {
-    padding: 0 1.5em 1em 5em;
+  padding: 0 1.5em 1em 5em;
 }
+
+.main-content {
+  flex-grow: 1;
+  background-color: #f0f0f0;
+}
+
+.main-content-navbar {
+  font-family: "Libre Franklin", sans-serif;
+  height: 20vh;
+  border-bottom: 1px solid #dadce0;
+  padding: 1em 1em 0 1em;
+}
+
+.nav-home-text {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  color: #0f1419;
+  margin-bottom: 30px;
+}
+
+.nav-two-head-options {
+  display: flex;
+  justify-content: space-around;
+  font-weight: 500;
+  font-size: 12px;
+  color: #536471;
+}
+
+.feed-option {
+  transition: all 0.3s ease;
+}
+
+.feed-option:hover {
+  color: #0f1419;
+  font-weight: 800;
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-color: #2ba3ed;
+  text-decoration-thickness: 2.5px;
+  text-underline-offset: 15px;
+  transform: scale(1);
+}
+
+/* Define the right sidebar or footer styles */
+.right-sidebar {
+  width: 38%; /* Adjust the width as needed */
+  background-color: #333; /* Background color */
+  color: #fff; /* Text color */
+  /* Add more styling as needed */
+}
+
+/* font-family: 'Libre Franklin', sans-serif; */
