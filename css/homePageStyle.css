@@ -66,6 +66,7 @@
   width: 48%;
   flex-grow: 1;
   background-color: #ffffff;
+  border-right: 1px solid #dadce0;
 }
 
 /* .main-content-scroll {
@@ -241,9 +242,16 @@
 
 .acct-option-holder {
     padding-top: 4px;
+    /* display: grid;
+    grid-template-columns: auto 1fr; */
     display: flex;
+    /* justify-content: space-between; */
     gap: 160px;
 }
+
+/* .tweet-opt-icon {
+    text-align: end;
+} */
 
 .user-acct-details {
     display: flex;
@@ -266,20 +274,20 @@
 
 .usernamne {
     cursor: pointer;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 12px;
     color: #536471;
 }
 
 .post-time {
-    font-weight: 500;
+    font-weight: 400;
     font-size: 12px;
     color: #536471;
 }
 
 .tweeted-post {
     cursor: pointer;
-    font-size: 15px;
+    font-size: 14px;
     color: #0f1419;
     margin-bottom: 10px;
 }
@@ -314,24 +322,24 @@
     cursor: pointer;
 }
 
-/* .tweet-img-container {
-    padding: 0;
-  width: ;
-  height: ;
-} */
+.tweet-img-container {
+    width: 29em;
+    height: 80vh;
+}
 
-/* .tweet-img {
+.tweet-image {
+    border-radius: 18px;
     width: 100%;
-    height: 80px;
-} */
-
+    height: 100%;
+}
 
 
 
 
 .right-sidebar {
   width: 38%;
-  background-color: #333;
+  /* background-color: transparent; */
+  background-color: #ffffff;
   color: #fff;
 }
 
