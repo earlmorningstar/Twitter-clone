@@ -403,7 +403,7 @@
   color: #ffffff;
   font-weight: 700;
   font-size: 12px;
-  padding: 8px 18px;
+  padding: 6px 16px;
   border: 1px solid #0f1419;
   border-radius: 20px;
 }
@@ -417,8 +417,8 @@
 }
 
 .diff-trend-wrapper {
-    margin-bottom: 10px;
-    cursor: pointer;
+  margin-bottom: 30px;
+  cursor: pointer;
 }
 
 .trend-bold-text {
@@ -429,8 +429,8 @@
 }
 
 .trending-country-and-opt {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .trending-country {
@@ -445,11 +445,44 @@
 }
 
 .trend-title {
-    color: #0f1419;
-    font-weight: 700;
-    font-size: 12px;
-    margin-bottom: 3px;
-  }
+  color: #0f1419;
+  font-weight: 700;
+  font-size: 12px;
+  margin-bottom: 3px;
+}
+
+.account-to-follow-container {
+  width: 18em;
+  padding: 0.7em 1em;
+  background-color: rgba(209, 207, 207, 0.208);
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+.who-to-follow-bold-text {
+  color: #0f1419;
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.username-and-badge {
+  display: flex;
+  gap: 2px;
+  align-items: center;
+}
+
+.img-acct-container {
+  display: flex;
+  gap: 10px;
+}
+
+.account-follow-btn-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
 
 /* font-family: 'Libre Franklin', sans-serif; */
 /* #dadce0 */
