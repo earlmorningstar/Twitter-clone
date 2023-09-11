@@ -7,6 +7,7 @@
 }
 
 .homepage {
+  font-family: "Libre Franklin", sans-serif;
   display: flex;
 }
 
@@ -61,10 +62,9 @@
   padding: 0 1.5em 1em 5em;
 }
 
-.main-content {
+.main-content-container {
   width: 48%;
   flex-grow: 1;
-  /* background-color: #f0f0f0; */
   background-color: #ffffff;
 }
 
@@ -123,6 +123,7 @@
 }
 
 .audience-selection-container {
+  cursor: pointer;
   display: flex;
   gap: 5px;
   align-items: center;
@@ -152,55 +153,69 @@
 }
 
 .x-axis-line {
-    width: 100%;
-    height: 0.5px;
-    background-color: #dadce0;
-  }
+  width: 100%;
+  height: 0.5px;
+  background-color: #dadce0;
+}
 
-  .post-container {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
+.post-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 
-  #post-desk {
-    border: none;
-  }
+#post-desk {
+  border: none;
+}
 
-  #post-desk::placeholder {
-    font-family: 'Libre Franklin', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-  }
+#post-desk::placeholder {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
 
-  .icons-post-btn-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+#post-desk:focus {
+  outline: none;
+}
 
-  .post-btn {
-    cursor: pointer;
-    font-family: 'Libre Franklin', sans-serif;
-    font-weight: 700;
-    font-size: 12px;
-    padding: 8px 15px;
-    color: #ffffff;
-    background-color: #2ba3ed;
-    border: 1px solid #2ba3ed;
-    border-radius: 20px;
-  }
+.icons-post-btn-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  .post-icon-wrapper {
-    display: flex;
-    gap: 10px;
-  }
+.post-btn {
+  cursor: pointer;
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  padding: 8px 15px;
+  color: #ffffff;
+  background-color: #2ba3ed;
+  border: 1px solid #2ba3ed;
+  border-radius: 20px;
+}
 
-  .post-icon-wrapper > span {
-    cursor: pointer;
-    font-size: 16px;
-    color: #2ba3ed;
-  }
+.post-icon-wrapper {
+  display: flex;
+  gap: 10px;
+}
+
+.post-icon-wrapper > span {
+  cursor: pointer;
+  font-size: 16px;
+  color: #2ba3ed;
+}
+
+.unseen-post {
+  cursor: pointer;
+  color: #2ba3ed;
+  font-weight: 500;
+  font-size: 12px;
+  text-align: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #dadce0;
+}
 
 .right-sidebar {
   width: 38%;
