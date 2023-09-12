@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Libre Franklin", sans-serif;
+    background-color: #eaf0f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+  }
+
+  .features-container {
+    padding: 0.5em 3em 0.5em 1.5em;
+    width: 50%;
+    background-color: #ffffff;
+    border-radius: 10px;
+  }
+
+  .icon-and-feature-wrapper {
+    display: flex;
+    width: 100%;
+    padding: 0.2em 0 1em 0;
+}
+
+  .feature-exit-icon {
+    cursor: pointer;
+    width: 10%;
+    font-size: 20px;
+  }
+
+  .feature-section {
+    padding: 2em 0 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 90%;
+  }
+
+  .feature-bold-header{
+    font-weight: 700;
+    font-size: 25px;
+    color: #0f1419;
+  }
+
+  .bold-sub-info {
+    font-weight: 600;
+    font-size: 13px;
+    color: #0f1419;
+  }
+
+  .bold-and-light-txt-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .bold-txt-feat {
+    font-weight: 700;
+    font-size: 15px;
+    color: #0f1419;
+  }
+
+  .light-txt-feat {
+    font-weight: 500;
+    font-size: 12px;
+    color: #536471;
+  }
+
+  .blue-link-text {
+    cursor: pointer;
+    color: #2ba3ed;
+  }
+
+  #light-txt-feat-id {
+    font-weight: 400;
+    font-size: 11px;
+  }
+
+  .apply-btn {
+    cursor: pointer;
+    width: 30em;
+    background-color: #0f1419;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 13px;
+    padding: 10px 20px;
+    border: 1px solid #0f1419;
+    border-radius: 30px;
+  }
+
+  .footer-text {
+    font-weight: 500;
+    font-size: 10px;
+    color: #536471;
+  }
+
+  .underline-link {
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+  }
+
+  .beta-text{
+    padding: 1px;
+    border-radius: 4px;
+    background-color: rgb(237, 223, 195);
+    color: rgb(147, 44, 4);
+    font-size: 12px;
+  }
