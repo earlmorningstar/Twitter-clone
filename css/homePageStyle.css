@@ -313,7 +313,8 @@
 }
 
 .post-numb {
-  font-size: 12px;
+  font-weight: 400;
+  font-size: 11px;
   cursor: pointer;
 }
 
@@ -484,5 +485,24 @@
   margin-bottom: 20px;
 }
 
+.terms-services-container {
+    font-weight: 400;
+    font-size: 10px;
+    color: #536471;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.policies-wrapper {
+    display: flex;
+    gap: 10px;
+}
+
+.more-icon-link {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
 /* font-family: 'Libre Franklin', sans-serif; */
 /* #dadce0 */
