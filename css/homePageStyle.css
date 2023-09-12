@@ -69,11 +69,6 @@
   border-right: 1px solid #dadce0;
 }
 
-/* .main-content-scroll {
-    height: 100%;
-    overflow-y: scroll; 
-} */
-
 .main-content-navbar {
   font-family: "Libre Franklin", sans-serif;
   height: 20vh;
@@ -243,14 +238,10 @@
   padding-top: 4px;
   /* display: grid;
     grid-template-columns: auto 1fr; */
-  display: flex;
   /* justify-content: space-between; */
+  display: flex;
   gap: 160px;
 }
-
-/* .tweet-opt-icon {
-    text-align: end;
-} */
 
 .user-acct-details {
   display: flex;
@@ -263,6 +254,7 @@
   font-size: 12px;
   color: #0f1419;
 }
+
 .bx {
   cursor: pointer;
 }
@@ -476,6 +468,7 @@
 .img-acct-container {
   display: flex;
   gap: 10px;
+
 }
 
 .account-follow-btn-container {
@@ -486,23 +479,24 @@
 }
 
 .terms-services-container {
-    font-weight: 400;
-    font-size: 10px;
-    color: #536471;
-    display: flex;
-    flex-direction: column;
-    gap: 3px;
+  font-weight: 400;
+  font-size: 10px;
+  color: #536471;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
 }
 
 .policies-wrapper {
-    display: flex;
-    gap: 10px;
+  display: flex;
+  gap: 10px;
 }
 
 .more-icon-link {
-    display: flex;
-    align-items: center;
-    gap: 2px;
+  display: flex;
+  align-items: center;
+  gap: 2px;
 }
+
 /* font-family: 'Libre Franklin', sans-serif; */
 /* #dadce0 */
