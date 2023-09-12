@@ -1,403 +1,505 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/remixicon.css">
-    <link rel="stylesheet" href="/css/homePageStyle.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/remixicon.css" />
+    <link rel="stylesheet" href="/css/homePageStyle.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
     <title>X Home Page</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="homepage">
-        <!-- Section 1: Sidebar -->
-        <div class="sidebar-container">
-            <div class="sidebar-content">
-                <div class="sidebar-item" id="x-svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 2H1L9.26086 13.0145L1.44995 21.9999H4.09998L10.4883 14.651L16 22H23L14.3917 10.5223L21.8001 2H19.1501L13.1643 8.88578L8 2ZM17 20L5 4H7L19 20H17Z"></path></svg></div>
-                <div class="sidebar-item"><i class="ri-home-7-line"></i></div>
-                <div class="sidebar-item"><i class="ri-search-line"></i></div>
-                <div class="sidebar-item"><i class="ri-notification-4-line"></i></div>
-                <div class="sidebar-item"><i class="ri-mail-line"></i></div>
-                <div class="sidebar-item"><i class="ri-bill-line"></i></div>
-                <div class="sidebar-item"><i class="ri-community-line"></i></div>
-                <div class="sidebar-item" id="x-svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 2H1L9.26086 13.0145L1.44995 21.9999H4.09998L10.4883 14.651L16 22H23L14.3917 10.5223L21.8001 2H19.1501L13.1643 8.88578L8 2ZM17 20L5 4H7L19 20H17Z"></path></svg></div>
-                <div class="sidebar-item"><i class='bx bx-user'></i></div>
-                <div class="sidebar-item"><i class='bx bx-dots-horizontal-rounded'></i></div>
+      <!-- Section 1: Sidebar -->
+      <div class="sidebar-container">
+        <div class="sidebar-content">
+          <div class="sidebar-item" id="x-svg">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path
+                d="M8 2H1L9.26086 13.0145L1.44995 21.9999H4.09998L10.4883 14.651L16 22H23L14.3917 10.5223L21.8001 2H19.1501L13.1643 8.88578L8 2ZM17 20L5 4H7L19 20H17Z"
+              ></path>
+            </svg>
+          </div>
+          <div class="sidebar-item"><i class="ri-home-7-line"></i></div>
+          <div class="sidebar-item"><i class="ri-search-line"></i></div>
+          <div class="sidebar-item"><i class="ri-notification-4-line"></i></div>
+          <div class="sidebar-item"><i class="ri-mail-line"></i></div>
+          <div class="sidebar-item"><i class="ri-bill-line"></i></div>
+          <div class="sidebar-item"><i class="ri-community-line"></i></div>
+          <div class="sidebar-item" id="x-svg">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path
+                d="M8 2H1L9.26086 13.0145L1.44995 21.9999H4.09998L10.4883 14.651L16 22H23L14.3917 10.5223L21.8001 2H19.1501L13.1643 8.88578L8 2ZM17 20L5 4H7L19 20H17Z"
+              ></path>
+            </svg>
+          </div>
+          <div class="sidebar-item"><i class="bx bx-user"></i></div>
+          <div class="sidebar-item">
+            <i class="bx bx-dots-horizontal-rounded"></i>
+          </div>
+        </div>
+        <div class="sidebar-content-ii">
+          <div id="x-tweet-icon" class="sidebar-item">
+            <i class="ri-add-line"></i><i class="ri-leaf-line"></i>
+          </div>
+          <div id="account-circle-line" class="sidebar-item">
+            <i class="bx bxs-user-circle"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 2: Main Content -->
+      <div class="main-content-container">
+        <nav class="main-content-navbar">
+          <div class="nav-home-text">Home</div>
+          <div class="nav-two-head-options">
+            <span class="feed-option">For you</span>
+            <span class="feed-option">Following</span>
+          </div>
+        </nav>
+
+        <div class="whats-happening-container">
+          <div class="w-h-account-circle" id="account-circle-line">
+            <i class="bx bxs-user-circle"></i>
+          </div>
+          <div class="post-container">
+            <div class="audience-selection-container">
+              <span class="bold-blue-text">Everyone</span
+              ><span><i class="ri-arrow-down-s-line"></i></span>
             </div>
-            <div class="sidebar-content-ii">
-                <div id="x-tweet-icon" class="sidebar-item"><i class="ri-add-line"></i><i class="ri-leaf-line"></i></div>
-                <div id="account-circle-line" class="sidebar-item"><i class='bx bxs-user-circle'></i></div>
+            <div>
+              <label for="text"></label>
+              <textarea
+                id="post-desk"
+                name="post"
+                rows="2"
+                cols="50"
+                placeholder="What is happening?!"
+              ></textarea>
             </div>
+            <div class="globe-and-text">
+              <span><i class="ri-earth-fill"></i></span
+              ><span class="bold-blue-text">Everyone can reply</span>
+            </div>
+            <div class="x-axis-line"></div>
+            <div class="icons-post-btn-container">
+              <div class="post-icon-wrapper">
+                <span><i class="ri-image-2-line"></i></span>
+                <span><i class="ri-file-gif-line"></i></span>
+                <span><i class="ri-chat-poll-line"></i></span>
+                <span><i class="ri-emoji-sticker-line"></i></span>
+                <span><i class="ri-calendar-todo-line"></i></span>
+                <span><i class="ri-map-pin-line"></i></span>
+              </div>
+              <div><button class="post-btn">Post</button></div>
+            </div>
+          </div>
         </div>
 
-        <!-- Section 2: Main Content -->
-        <div class="main-content-container">
-           
-            <nav class="main-content-navbar">
-                <div class="nav-home-text">Home</div>
-                <div class="nav-two-head-options">
-                    <span class="feed-option">For you</span>
-                    <span class="feed-option">Following</span>
-                </div>
-            </nav>
+        <div class="unseen-post">Show <span>315</span> posts</div>
 
-            <div class="whats-happening-container">
-                <div class="w-h-account-circle" id="account-circle-line"><i class='bx bxs-user-circle'></i></div>
-                <div class="post-container">
-                    <div class="audience-selection-container"><span class="bold-blue-text">Everyone</span><span><i class="ri-arrow-down-s-line"></i></span></div>
-                    <div>
-                        <label for="text"></label>
-                        <textarea id="post-desk" name="post" rows="2" cols="50" placeholder="What is happening?!"></textarea>
-                    </div>
-                    <div class="globe-and-text"><span><i class="ri-earth-fill"></i></span><span class="bold-blue-text">Everyone can reply</span></div>
-                    <div class="x-axis-line"></div>
-                    <div class="icons-post-btn-container">
-                        <div class="post-icon-wrapper">
-                            <span><i class="ri-image-2-line"></i></span>
-                            <span><i class="ri-file-gif-line"></i></span>
-                            <span><i class="ri-chat-poll-line"></i></span>
-                            <span><i class="ri-emoji-sticker-line"></i></span>
-                            <span><i class="ri-calendar-todo-line"></i></span>
-                            <span><i class="ri-map-pin-line"></i></span>
-                        </div>
-                        <div><button class="post-btn">Post</button></div>
-                    </div>
-                </div>
+        <div class="full-post-container">
+          <div class="user-handle-container">
+            <div class="x-dp-wrapper">
+              <img class="x-dp" src="/images/x-dp.jpg" alt="" />
             </div>
 
-            <div class="unseen-post">Show <span>315</span> posts</div>
-
-            <div class="full-post-container">
-
-                <div class="user-handle-container">
-
-                <div class="x-dp-wrapper"><img class="x-dp" src="/images/x-dp.jpg" alt=""></div>
-
-                <div class="acct-opt-and-post-container">
-                    <div class="acct-option-holder">
-                    <div class="user-acct-details">
-                        <span class="user-display-name">Jamal Pacman</span>
-                        <span><i class='bx bxs-badge-check'></i></span>
-                        <span class="usernamne">@jamalPacman</span>
-                        <!-- <span class="dot">.</span> -->
-                        <span class="post-time"> · 4h</span>
-                    </div>
-                <div class="tweet-opt-icon"><i class='bx bx-dots-horizontal-rounded'></i></div>
-                    </div>
+            <div class="acct-opt-and-post-container">
+              <div class="acct-option-holder">
+                <div class="user-acct-details">
+                  <span class="user-display-name">Jamal Pacman</span>
+                  <span><i class="bx bxs-badge-check"></i></span>
+                  <span class="usernamne">@jamalPacman</span>
+                  <!-- <span class="dot">.</span> -->
+                  <span class="post-time"> · 4h</span>
                 </div>
+                <div class="tweet-opt-icon">
+                  <i class="bx bx-dots-horizontal-rounded"></i>
+                </div>
+              </div>
             </div>
-            
-            <div class="tweet-post-like-comm-share-container">
-            <div class="tweeted-post">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam sed laboriosam explicabo similique dolor fugiat. Adipisci dolore eligendi doloribus cum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti incidunt voluptates modi consequuntur quia. Reprehenderit libero nisi pariatur provident laboriosam nobis, voluptatibus ex labore qui dolores rem quod ad culpa itaque, tenetur sequi quidem modi tempora quisquam harum tempore! Quas magni unde, soluta eum maiores quos consequatur nam labore mollitia.</div>
+          </div>
 
-            <div class="tweet-like-comm-share">
-                <div class="individial-icon-numb-wrapper">
-                    <span class="post-icon"><i class="ri-chat-1-line"></i></span>
-                    <span class="post-numb">10.5k</span>
-                </div>
-                <div class="individial-icon-numb-wrapper">
-                    <span class="post-icon"><i class="fas fa-retweet"></i></span>
-                    <span class="post-numb">22.8k</span>
-                </div>
-                <div class="individial-icon-numb-wrapper">
-                    <span class="post-icon"><i class="ri-heart-3-line"></i></span>
-                    <span class="post-numb">123k</span>
-                </div>
-                <div class="individial-icon-numb-wrapper">
-                    <span><i class="ri-bar-chart-line"></i></span>
-                    <span class="post-numb">378.4k</span>
-                </div>
-                <div class="individial-icon-numb-wrapper"><i id="share-icon" class="ri-download-2-line"></i></div>
-            </div>
-            
-        </div>
-            </div>
-
-            <div class="full-post-container">
-
-                <div class="user-handle-container">
-
-                <div class="x-dp-wrapper"><img class="x-dp" src="/images/x-dp-2.jpg" alt=""></div>
-
-                <div class="acct-opt-and-post-container">
-                    <div class="acct-option-holder">
-                    <div class="user-acct-details">
-                        <span class="user-display-name">No Real Name</span>
-                        <span><i class='bx bxs-badge-check'></i></span>
-                        <span class="usernamne">@GiveMeAName</span>
-                        <!-- <span class="dot">.</span> -->
-                        <span class="post-time"> · 2h</span>
-                    </div>
-                    <div class="tweet-opt-icon"><i class='bx bx-dots-horizontal-rounded'></i></div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="tweet-post-like-comm-share-container">
+          <div class="tweet-post-like-comm-share-container">
             <div class="tweeted-post">
-                <div class="tweeted-post">Vitor Roque’s registration is Barcelona’s clear priority in January. </div>
-                <div class="tweet-img-container"><img class="tweet-image" src="/images/full-x-post-image-2.jpg" alt=""></div>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+              sed laboriosam explicabo similique dolor fugiat. Adipisci dolore
+              eligendi doloribus cum? Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Deleniti incidunt voluptates modi consequuntur
+              quia. Reprehenderit libero nisi pariatur provident laboriosam
+              nobis, voluptatibus ex labore qui dolores rem quod ad culpa
+              itaque, tenetur sequi quidem modi tempora quisquam harum tempore!
+              Quas magni unde, soluta eum maiores quos consequatur nam labore
+              mollitia.
             </div>
 
             <div class="tweet-like-comm-share">
-                <div class="individial-icon-numb-wrapper">
-                    <span class="post-icon"><i class="ri-chat-1-line"></i></span>
-                    <span class="post-numb">912</span>
-                </div>
-                <div class="individial-icon-numb-wrapper">
-                    <span class="post-icon"><i class="fas fa-retweet"></i></span>
-                    <span class="post-numb">354</span>
-                </div>
-                <div class="individial-icon-numb-wrapper">
-                    <span class="post-icon"><i class="ri-heart-3-line"></i></span>
-                    <span class="post-numb">687</span>
-                </div>
-                <div class="individial-icon-numb-wrapper">
-                    <span><i class="ri-bar-chart-line"></i></span>
-                    <span class="post-numb">3998</span>
-                </div>
-                <div class="individial-icon-numb-wrapper"><i id="share-icon" class="ri-download-2-line"></i></div>
+              <div class="individial-icon-numb-wrapper">
+                <span class="post-icon"><i class="ri-chat-1-line"></i></span>
+                <span class="post-numb">10.5k</span>
+              </div>
+              <div class="individial-icon-numb-wrapper">
+                <span class="post-icon"><i class="fas fa-retweet"></i></span>
+                <span class="post-numb">22.8k</span>
+              </div>
+              <div class="individial-icon-numb-wrapper">
+                <span class="post-icon"><i class="ri-heart-3-line"></i></span>
+                <span class="post-numb">123k</span>
+              </div>
+              <div class="individial-icon-numb-wrapper">
+                <span><i class="ri-bar-chart-line"></i></span>
+                <span class="post-numb">378.4k</span>
+              </div>
+              <div class="individial-icon-numb-wrapper">
+                <i id="share-icon" class="ri-download-2-line"></i>
+              </div>
             </div>
-            
+          </div>
         </div>
+
+        <div class="full-post-container">
+          <div class="user-handle-container">
+            <div class="x-dp-wrapper">
+              <img class="x-dp" src="/images/x-dp-2.jpg" alt="" />
             </div>
 
-            <div class="full-post-container">
-
-                <div class="user-handle-container">
-
-                <div class="x-dp-wrapper"><img class="x-dp" src="/images/x-dp-3.jpg" alt=""></div>
-
-                <div class="acct-opt-and-post-container">
-                    <div class="acct-option-holder">
-                    <div class="user-acct-details">
-                        <span class="user-display-name">Marylin Monroe</span>
-                        <span><i class='bx bxs-badge-check'></i></span>
-                        <span class="usernamne">@Monroelynn</span>
-                        <!-- <span class="dot">.</span> -->
-                        <span class="post-time"> · 23h</span>
-                    </div>
-                    <div class="tweet-opt-icon"><i class='bx bx-dots-horizontal-rounded'></i></div>
-                    </div>
+            <div class="acct-opt-and-post-container">
+              <div class="acct-option-holder">
+                <div class="user-acct-details">
+                  <span class="user-display-name">No Real Name</span>
+                  <span><i class="bx bxs-badge-check"></i></span>
+                  <span class="usernamne">@GiveMeAName</span>
+                  <!-- <span class="dot">.</span> -->
+                  <span class="post-time"> · 2h</span>
                 </div>
+                <div class="tweet-opt-icon">
+                  <i class="bx bx-dots-horizontal-rounded"></i>
+                </div>
+              </div>
             </div>
-            
-            <div class="tweet-post-like-comm-share-container">
+          </div>
+
+          <div class="tweet-post-like-comm-share-container">
             <div class="tweeted-post">
-                <div class="tweeted-post"></div>
-                <div class="tweet-img-container"><img class="tweet-image" src="/images/full-x-post-image-3.jpg" alt=""></div>
-            </div>
-
-            <div class="tweet-like-comm-share">
-                <div class="individial-icon-numb-wrapper">
-                    <span class="post-icon"><i class="ri-chat-1-line"></i></span>
-                    <span class="post-numb">17.3k</span>
-                </div>
-                <div class="individial-icon-numb-wrapper">
-                    <span class="post-icon"><i class="fas fa-retweet"></i></span>
-                    <span class="post-numb">789.5k</span>
-                </div>
-                <div class="individial-icon-numb-wrapper">
-                    <span class="post-icon"><i class="ri-heart-3-line"></i></span>
-                    <span class="post-numb">1.3M</span>
-                </div>
-                <div class="individial-icon-numb-wrapper">
-                    <span><i class="ri-bar-chart-line"></i></span>
-                    <span class="post-numb">2M</span>
-                </div>
-                <div class="individial-icon-numb-wrapper"><i id="share-icon" class="ri-download-2-line"></i></div>
-            </div>
-            
-        </div>
-            </div>
-
-        </div>
-
-
-        <!-- Section 3: Right Sidebar-->
-        <div class="right-sidebar">
-            <div class="right-sidebar-navbar">
-                <div class="search">
-                <form action="" class="search-bar">
-                  <button class="search-btn-icon" type="submit"><i class="ri-search-line"></i></button>
-                  <input type="text" placeholder="Search" name="q" />
-                </form>
+              <div class="tweeted-post">
+                Vitor Roque’s registration is Barcelona’s clear priority in
+                January.
+              </div>
+              <div class="tweet-img-container">
+                <img
+                  class="tweet-image"
+                  src="/images/full-x-post-image-2.jpg"
+                  alt=""
+                />
               </div>
             </div>
 
-            <div class="sub-ad-container">
-                <div class="bold-sub-head">Subscribe to Premium</div>
-                <div class="sub-note">Subscribe to unlock new features and if eligible, receive a share of ads revenue.</div>
-                <div><button class="sub-btn">Subscribe</button></div>
+            <div class="tweet-like-comm-share">
+              <div class="individial-icon-numb-wrapper">
+                <span class="post-icon"><i class="ri-chat-1-line"></i></span>
+                <span class="post-numb">912</span>
+              </div>
+              <div class="individial-icon-numb-wrapper">
+                <span class="post-icon"><i class="fas fa-retweet"></i></span>
+                <span class="post-numb">354</span>
+              </div>
+              <div class="individial-icon-numb-wrapper">
+                <span class="post-icon"><i class="ri-heart-3-line"></i></span>
+                <span class="post-numb">687</span>
+              </div>
+              <div class="individial-icon-numb-wrapper">
+                <span><i class="ri-bar-chart-line"></i></span>
+                <span class="post-numb">3998</span>
+              </div>
+              <div class="individial-icon-numb-wrapper">
+                <i id="share-icon" class="ri-download-2-line"></i>
+              </div>
             </div>
-
-            <div class="trend-table-container">
-                <div class="trend-bold-text">Trends for you</div>
-                
-                <div class="diff-trend-wrapper">
-                    <div class="trending-country-and-opt">
-                        <div class="trending-country">Trending in Nigeria</div>
-                        <div class="trend-option-bar"><i class='bx bx-dots-horizontal-rounded'></i></div>
-                    </div>
-                    <div class="trend-title">#moyolawal</div>
-                    <div class="trend-post-numb">46.8K posts</div>
-                </div>
-
-
-
-                <div class="diff-trend-wrapper">
-                    <div class="trending-country-and-opt">
-                        <div class="trending-country">Trending in Nigeria</div>
-                        <div class="trend-option-bar"><i class='bx bx-dots-horizontal-rounded'></i></div>
-                    </div>
-                    <div class="trend-title">#actress</div>
-                    <div class="trend-post-numb">11K posts</div>
-                </div>
-
-
-
-                <div class="diff-trend-wrapper">
-                    <div class="trending-country-and-opt">
-                        <div class="trending-country">Trending in Nigeria</div>
-                        <div class="trend-option-bar"><i class='bx bx-dots-horizontal-rounded'></i></div>
-                    </div>
-                    <div class="trend-title">FEAR WOMEN</div>
-                    <div class="trend-post-numb">59.3K posts</div>
-                </div>
-
-
-                <div class="diff-trend-wrapper">
-                    <div class="trending-country-and-opt">
-                        <div class="trending-country">Entertainment · Trending</div>
-                        <div class="trend-option-bar"><i class='bx bx-dots-horizontal-rounded'></i></div>
-                    </div>
-                    <div class="trend-title">MorMor</div>
-                    <div class="trend-post-numb">898K posts</div>
-                </div>
-
-
-
-                <div class="diff-trend-wrapper">
-                    <div class="trending-country-and-opt">
-                        <div class="trending-country">Technology · Trending</div>
-                        <div class="trend-option-bar"><i class='bx bx-dots-horizontal-rounded'></i></div>
-                    </div>
-                    <div class="trend-title">Soji</div>
-                    <div class="trend-post-numb">2M posts</div>
-                </div>
-
-
-                <div class="diff-trend-wrapper">
-                    <div class="trending-country-and-opt">
-                        <div class="trending-country">Trending in Nigeria</div>
-                        <div class="trend-option-bar"><i class='bx bx-dots-horizontal-rounded'></i></div>
-                    </div>
-                    <div class="trend-title">NO BRAND WILL SIGN HER</div>
-                    <div class="trend-post-numb">28.1K posts</div>
-                </div>
-
-
-                <div class="diff-trend-wrapper">
-                    <div class="trending-country-and-opt">
-                        <div class="trending-country">Trending in Nigeria</div>
-                        <div class="trend-option-bar"><i class='bx bx-dots-horizontal-rounded'></i></div>
-                    </div>
-                    <div class="trend-title">Ororo</div>
-                    <div class="trend-post-numb"></div>
-                </div>
-
-
-                <div class="diff-trend-wrapper">
-                    <div class="trending-country-and-opt">
-                        <div class="trending-country">Trending in Nigeria</div>
-                        <div class="trend-option-bar"><i class='bx bx-dots-horizontal-rounded'></i></div>
-                    </div>
-                    <div class="trend-title">$tip</div>
-                    <div class="trend-post-numb">876K posts</div>
-                </div>
-            </div>
-
-            <div class="account-to-follow-container">
-                <div class="who-to-follow-bold-text">Who to follow</div>
-                
-                <div class="account-follow-btn-container">
-                <div class="img-acct-container">
-                    <div class="x-dp-wrapper"><img class="x-dp" src="/images/x-dp.jpg" alt=""></div>
-                    <div>
-                    <div class="username-and-badge"><span class="user-display-name">Jamal Pacman</span><span><i class='bx bxs-badge-check'></i></span></div>
-                    <div><span class="usernamne">@jamalPacman</span></div>
-                    </div>
-                </div>
-                <div><button class="sub-btn">Follow</button></div>
-            </div>
-
-
-            <div class="account-follow-btn-container">
-                <div class="img-acct-container">
-                    <div class="x-dp-wrapper"><img class="x-dp" src="/images/x-dp.jpg" alt=""></div>
-                    <div>
-                    <div class="username-and-badge"><span class="user-display-name">Jamal Pacman</span><span><i class='bx bxs-badge-check'></i></span></div>
-                    <div><span class="usernamne">@jamalPacman</span></div>
-                    </div>
-                </div>
-                <div><button class="sub-btn">Follow</button></div>
-            </div>
-
-            <div class="account-follow-btn-container">
-                <div class="img-acct-container">
-                    <div class="x-dp-wrapper"><img class="x-dp" src="/images/x-dp.jpg" alt=""></div>
-                    <div>
-                    <div class="username-and-badge"><span class="user-display-name">Jamal Pacman</span><span><i class='bx bxs-badge-check'></i></span></div>
-                    <div><span class="usernamne">@jamalPacman</span></div>
-                    </div>
-                </div>
-                <div><button class="sub-btn">Follow</button></div>
-            </div>
-
-            <div class="account-follow-btn-container">
-                <div class="img-acct-container">
-                    <div class="x-dp-wrapper"><img class="x-dp" src="/images/x-dp.jpg" alt=""></div>
-                    <div>
-                    <div class="username-and-badge"><span class="user-display-name">Jamal Pacman</span><span><i class='bx bxs-badge-check'></i></span></div>
-                    <div><span class="usernamne">@jamalPacman</span></div>
-                    </div>
-                </div>
-                <div><button class="sub-btn">Follow</button></div>
-            </div>
-
-            <div class="account-follow-btn-container">
-                <div class="img-acct-container">
-                    <div class="x-dp-wrapper"><img class="x-dp" src="/images/x-dp.jpg" alt=""></div>
-                    <div>
-                    <div class="username-and-badge"><span class="user-display-name">Jamal Pacman</span><span><i class='bx bxs-badge-check'></i></span></div>
-                    <div><span class="usernamne">@jamalPacman</span></div>
-                    </div>
-                </div>
-                <div><button class="sub-btn">Follow</button></div>
-            </div>
-            </div>
-            
-            <div class="terms-services-container">
-                <div class="policies-wrapper">
-                    <span>Terms of Service</span>
-                    <span>Privacy Policy</span>
-                    <span>Cookie Policy</span>
-                </div>
-                <div class="policies-wrapper">
-                    <span>Accessibility</span>
-                    <span>Ads info</span>
-                    <span class="more-icon-link">More <i class='bx bx-dots-horizontal-rounded'></i></span>
-                    <span>© 2023 X Corp.</span>
-                </div>
-            </div>
+          </div>
         </div>
+
+        <div class="full-post-container">
+          <div class="user-handle-container">
+            <div class="x-dp-wrapper">
+              <img class="x-dp" src="/images/x-dp-3.jpg" alt="" />
+            </div>
+
+            <div class="acct-opt-and-post-container">
+              <div class="acct-option-holder">
+                <div class="user-acct-details">
+                  <span class="user-display-name">Marylin Monroe</span>
+                  <span><i class="bx bxs-badge-check"></i></span>
+                  <span class="usernamne">@Monroelynn</span>
+                  <!-- <span class="dot">.</span> -->
+                  <span class="post-time"> · 23h</span>
+                </div>
+                <div class="tweet-opt-icon">
+                  <i class="bx bx-dots-horizontal-rounded"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tweet-post-like-comm-share-container">
+            <div class="tweeted-post">
+              <div class="tweeted-post"></div>
+              <div class="tweet-img-container">
+                <img
+                  class="tweet-image"
+                  src="/images/full-x-post-image-3.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="tweet-like-comm-share">
+              <div class="individial-icon-numb-wrapper">
+                <span class="post-icon"><i class="ri-chat-1-line"></i></span>
+                <span class="post-numb">17.3k</span>
+              </div>
+              <div class="individial-icon-numb-wrapper">
+                <span class="post-icon"><i class="fas fa-retweet"></i></span>
+                <span class="post-numb">789.5k</span>
+              </div>
+              <div class="individial-icon-numb-wrapper">
+                <span class="post-icon"><i class="ri-heart-3-line"></i></span>
+                <span class="post-numb">1.3M</span>
+              </div>
+              <div class="individial-icon-numb-wrapper">
+                <span><i class="ri-bar-chart-line"></i></span>
+                <span class="post-numb">2M</span>
+              </div>
+              <div class="individial-icon-numb-wrapper">
+                <i id="share-icon" class="ri-download-2-line"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 3: Right Sidebar-->
+      <div class="right-sidebar">
+        <div class="right-sidebar-navbar">
+          <div class="search">
+            <form action="" class="search-bar">
+              <button class="search-btn-icon" type="submit">
+                <i class="ri-search-line"></i>
+              </button>
+              <input type="text" placeholder="Search" name="q" />
+            </form>
+          </div>
+        </div>
+
+        <div class="sub-ad-container">
+          <div class="bold-sub-head">Subscribe to Premium</div>
+          <div class="sub-note">
+            Subscribe to unlock new features and if eligible, receive a share of
+            ads revenue.
+          </div>
+          <div><button class="sub-btn">Subscribe</button></div>
+        </div>
+
+        <div class="trend-table-container">
+          <div class="trend-bold-text">Trends for you</div>
+
+          <div class="diff-trend-wrapper">
+            <div class="trending-country-and-opt">
+              <div class="trending-country">Trending in Nigeria</div>
+              <div class="trend-option-bar">
+                <i class="bx bx-dots-horizontal-rounded"></i>
+              </div>
+            </div>
+            <div class="trend-title">#moyolawal</div>
+            <div class="trend-post-numb">46.8K posts</div>
+          </div>
+
+          <div class="diff-trend-wrapper">
+            <div class="trending-country-and-opt">
+              <div class="trending-country">Trending in Nigeria</div>
+              <div class="trend-option-bar">
+                <i class="bx bx-dots-horizontal-rounded"></i>
+              </div>
+            </div>
+            <div class="trend-title">#actress</div>
+            <div class="trend-post-numb">11K posts</div>
+          </div>
+
+          <div class="diff-trend-wrapper">
+            <div class="trending-country-and-opt">
+              <div class="trending-country">Trending in Nigeria</div>
+              <div class="trend-option-bar">
+                <i class="bx bx-dots-horizontal-rounded"></i>
+              </div>
+            </div>
+            <div class="trend-title">FEAR WOMEN</div>
+            <div class="trend-post-numb">59.3K posts</div>
+          </div>
+
+          <div class="diff-trend-wrapper">
+            <div class="trending-country-and-opt">
+              <div class="trending-country">Entertainment · Trending</div>
+              <div class="trend-option-bar">
+                <i class="bx bx-dots-horizontal-rounded"></i>
+              </div>
+            </div>
+            <div class="trend-title">MorMor</div>
+            <div class="trend-post-numb">898K posts</div>
+          </div>
+
+          <div class="diff-trend-wrapper">
+            <div class="trending-country-and-opt">
+              <div class="trending-country">Technology · Trending</div>
+              <div class="trend-option-bar">
+                <i class="bx bx-dots-horizontal-rounded"></i>
+              </div>
+            </div>
+            <div class="trend-title">Soji</div>
+            <div class="trend-post-numb">2M posts</div>
+          </div>
+
+          <div class="diff-trend-wrapper">
+            <div class="trending-country-and-opt">
+              <div class="trending-country">Trending in Nigeria</div>
+              <div class="trend-option-bar">
+                <i class="bx bx-dots-horizontal-rounded"></i>
+              </div>
+            </div>
+            <div class="trend-title">NO BRAND WILL SIGN HER</div>
+            <div class="trend-post-numb">28.1K posts</div>
+          </div>
+
+          <div class="diff-trend-wrapper">
+            <div class="trending-country-and-opt">
+              <div class="trending-country">Trending in Nigeria</div>
+              <div class="trend-option-bar">
+                <i class="bx bx-dots-horizontal-rounded"></i>
+              </div>
+            </div>
+            <div class="trend-title">Ororo</div>
+            <div class="trend-post-numb"></div>
+          </div>
+
+          <div class="diff-trend-wrapper">
+            <div class="trending-country-and-opt">
+              <div class="trending-country">Trending in Nigeria</div>
+              <div class="trend-option-bar">
+                <i class="bx bx-dots-horizontal-rounded"></i>
+              </div>
+            </div>
+            <div class="trend-title">$tip</div>
+            <div class="trend-post-numb">876K posts</div>
+          </div>
+        </div>
+
+        <div class="account-to-follow-container">
+          <div class="who-to-follow-bold-text">Who to follow</div>
+
+          <div class="account-follow-btn-container">
+            <div class="img-acct-container">
+              <div class="x-dp-wrapper">
+                <img class="x-dp" src="/images/x-dp.jpg" alt="" />
+              </div>
+              <div>
+                <div class="username-and-badge">
+                  <span class="user-display-name">Jamal Pacman</span
+                  ><span><i class="bx bxs-badge-check"></i></span>
+                </div>
+                <div><span class="usernamne">@jamalPacman</span></div>
+              </div>
+            </div>
+            <div><button class="sub-btn">Follow</button></div>
+          </div>
+
+          <div class="account-follow-btn-container">
+            <div class="img-acct-container">
+              <div class="x-dp-wrapper">
+                <img class="x-dp" src="/images/x-dp.jpg" alt="" />
+              </div>
+              <div>
+                <div class="username-and-badge">
+                  <span class="user-display-name">Jamal Pacman</span
+                  ><span><i class="bx bxs-badge-check"></i></span>
+                </div>
+                <div><span class="usernamne">@jamalPacman</span></div>
+              </div>
+            </div>
+            <div><button class="sub-btn">Follow</button></div>
+          </div>
+
+          <div class="account-follow-btn-container">
+            <div class="img-acct-container">
+              <div class="x-dp-wrapper">
+                <img class="x-dp" src="/images/x-dp.jpg" alt="" />
+              </div>
+              <div>
+                <div class="username-and-badge">
+                  <span class="user-display-name">Jamal Pacman</span
+                  ><span><i class="bx bxs-badge-check"></i></span>
+                </div>
+                <div><span class="usernamne">@jamalPacman</span></div>
+              </div>
+            </div>
+            <div><button class="sub-btn">Follow</button></div>
+          </div>
+
+          <div class="account-follow-btn-container">
+            <div class="img-acct-container">
+              <div class="x-dp-wrapper">
+                <img class="x-dp" src="/images/x-dp.jpg" alt="" />
+              </div>
+              <div>
+                <div class="username-and-badge">
+                  <span class="user-display-name">Jamal Pacman</span
+                  ><span><i class="bx bxs-badge-check"></i></span>
+                </div>
+                <div><span class="usernamne">@jamalPacman</span></div>
+              </div>
+            </div>
+            <div><button class="sub-btn">Follow</button></div>
+          </div>
+
+          <div class="account-follow-btn-container">
+            <div class="img-acct-container">
+              <div class="x-dp-wrapper">
+                <img class="x-dp" src="/images/x-dp.jpg" alt="" />
+              </div>
+              <div>
+                <div class="username-and-badge">
+                  <span class="user-display-name">Jamal Pacman</span
+                  ><span><i class="bx bxs-badge-check"></i></span>
+                </div>
+                <div><span class="usernamne">@jamalPacman</span></div>
+              </div>
+            </div>
+            <div><button class="sub-btn">Follow</button></div>
+          </div>
+        </div>
+
+        <div class="terms-services-container">
+          <div class="policies-wrapper">
+            <span>Terms of Service</span>
+            <span>Privacy Policy</span>
+            <span>Cookie Policy</span>
+          </div>
+          <div class="policies-wrapper">
+            <span>Accessibility</span>
+            <span>Ads info</span>
+            <span class="more-icon-link"
+              >More <i class="bx bx-dots-horizontal-rounded"></i
+            ></span>
+            <span>© 2023 X Corp.</span>
+          </div>
+        </div>
+      </div>
     </div>
 
-
-
-
-
     <script src="/app.js"></script>
-</body>
+  </body>
 </html>
