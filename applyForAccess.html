@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/applyForAccess.css">
+    <link rel="stylesheet" href="/css/remixicon.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <title>X Apply For Access</title>
+</head>
+<body>
+
+    <div class="application-container">
+        <div class="icon-and-application-wrapper">
+          <div class="application-exit-icon"><i class="ri-close-fill"></i></div>
+          <div class="application-section">
+            <div class="application-bold-header">Apply for access</div>
+            <div class="apply-light-text">We’ll use this information to assess your application. Upon receipt of payment and if eligible, you’ll be invited to activate your account. For information learn more <span class="apply-blue-link">here.</span></div>
+                    <form class="org-form-container" action="">
+                        <div>
+                        <label for="orgName"></label>
+                        <input id="orgName" type="text" name="orgName" placeholder="Organization name" />
+                        </div>
+
+                        <div class="handle-non-selection">
+                            <span class="org-handle">Organization @handle</span>
+                            <span class="org-handle-name">@NoName862756620</span>
+                        </div>
+                       
+                        <div>
+                        <label for="fullName"></label>
+                        <input id="fullName" type="email" name="fullName" placeholder="Your full name" />
+                        </div>
+
+                        <div>
+                         <label for="orgEmail"></label>
+                         <input id="orgEmail" type="email" name="orgEmail" placeholder="Organization email address" />
+                        </div>
+
+                        <div>
+                        <label for="orgWeb"></label>
+                        <input id="orgWeb" type="url" name="orgWeb" placeholder="Organization website" />
+                        </div>
+                        
+                                                
+                    <div class="org-type-container">
+                    <select class="select" id="org-type-id" name="orgType">
+                    <label class="select-class" id="org-lab-type-id" for="orgType"></label>
+
+                      <option class="sele-poin" value="">Organization type</option>
+                      <option value="business">Business</option>
+                      <option value="government">Government</option>
+                    
+                    </select>
+                </div>
+
+                    <div class="apply-checkbox">
+                        <input type="checkbox" id="checkbox-id" name="terms-conditions"/>
+                        <label class="apply-light-text" for="terms-conditions">By checking this box you indicate you have read and agree to the terms and conditions available <span class="apply-blue-link">here.</span></label>
+                    </div>
+                         <div class="apply-btn-wrapper"><button class="apply-submit-btn" type="submit">Submit</button></div>
+                    </form>
+            
+          </div>
+        </div>
+      </div>
+
+
+
+
+    <script src="/app.js"></script>
+</body>
+</html>
