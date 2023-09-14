@@ -11,15 +11,15 @@
   display: flex;
 }
 
-.sidebar-container {
+.left-sidebar-container {
   width: 14%;
   overflow-y: scroll;
   background-color: #ffffff;
-  color: #fff;
+  color: #ffffff;
   height: 100vh;
 }
 
-.sidebar-content {
+.left-sidebar-content {
   padding: 1em 0.5em 1em 5.5em;
 }
 
@@ -58,7 +58,7 @@
   color: #646e76;
 }
 
-.sidebar-content-ii {
+.left-sidebar-content-ii {
   padding: 0 1.5em 1em 5em;
 }
 
@@ -68,6 +68,7 @@
   background-color: #ffffff;
   border-right: 1px solid #dadce0;
 }
+
 
 .main-content-navbar {
   font-family: "Libre Franklin", sans-serif;
@@ -234,11 +235,14 @@
   gap: 10px;
 }
 
+/* .name-badge {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+} */
+
 .acct-option-holder {
   padding-top: 4px;
-  /* display: grid;
-    grid-template-columns: auto 1fr; */
-  /* justify-content: space-between; */
   display: flex;
   gap: 160px;
 }
@@ -263,7 +267,7 @@
   color: #2ba3ed;
 }
 
-.usernamne {
+.username {
   cursor: pointer;
   font-weight: 400;
   font-size: 12px;
@@ -497,6 +501,159 @@
   align-items: center;
   gap: 2px;
 }
+
+@media screen and (max-width: 1000px) {
+
+.user-acct-details {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.acct-option-holder {
+  width: 100%;
+  display: flex;
+  gap: 250px;
+}
+
+}
+
+@media screen and (max-width: 980px) {
+  .tweet-img-container{
+    width: 27em;
+    height: 60vh;
+  }
+
+  .user-time {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 930px) {
+
+  .tweet-img-container{
+    width: 25em;
+  } 
+
+.acct-option-holder {
+  gap: 200px;
+  }
+
+.name-badge {
+  width: 120px;
+}
+  
+}
+
+@media screen and (max-width: 900px) {
+  .left-sidebar-content {
+    padding: 1em 0.5em 1em 4.5em;
+  }
+
+  .left-sidebar-content-ii {
+    padding: 0 1em 1em 3.5em;
+  }
+
+  .main-content-container {
+    border-left: 1px solid #dadce0;
+  }
+
+  .tweet-img-container{
+    width: 23em;
+    height: 60vh;
+  }
+
+  .icons-post-btn-container {
+    justify-content: start;
+    gap: 120px;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .acct-option-holder {
+    gap: 190px;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .acct-option-holder {
+    gap: 170px;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .right-sidebar {
+    padding: 0 1em 0 0.5em;
+  }
+}
+
+
+@media screen and (max-width: 810px) {
+  .tweet-img-container{
+    width: 22em;
+    height: 50vh;
+  }
+
+  .icons-post-btn-container {
+    gap: 100px;
+
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .left-sidebar-content {
+    padding: 1em 0.5em 1em 3.5em;
+  }
+
+  .left-sidebar-content-ii {
+    padding: 0 1em 1em 2.5em;
+  }
+
+  .icons-post-btn-container {
+    gap: 80px;
+  }
+
+  .acct-option-holder {
+    gap: 140px;
+  }
+
+  .tweet-img-container{
+    width: 20em;
+    height: 50vh;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .right-sidebar {
+    display: none;
+  }
+
+  .post-container {
+    width: 80%;
+  }
+
+  .icons-post-btn-container {
+    gap: 240px;
+  }
+
+  .name-badge {
+    width: 110px;
+  } 
+  .user-acct-details {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 0;
+  }
+
+  .user-time {
+    display: flex;
+  }
+}
+
+
+
+
 
 /* font-family: 'Libre Franklin', sans-serif; */
 /* #dadce0 */
