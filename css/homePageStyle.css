@@ -344,8 +344,9 @@
   position: fixed;
   z-index: 100;
   backdrop-filter: blur(20px);
-  margin: 0.3em 0;
+  margin: 0 0 0.5em 0;
   height: 8vh;
+  padding-top: 0.3em;
 }
 
 .search-bar {
@@ -386,7 +387,7 @@
   padding: 0.7em 1em;
   background-color: rgba(209, 207, 207, 0.208);
   border-radius: 15px;
-  margin: 40px 0 10px 0;
+  margin: 45px 0 10px 0;
 }
 
 .bold-sub-head {
