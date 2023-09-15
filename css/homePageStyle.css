@@ -598,6 +598,10 @@
     gap: 100px;
 
   }
+
+  .acct-option-holder {
+    gap: 150px;
+  }
 }
 
 @media screen and (max-width: 770px) {
@@ -658,6 +662,13 @@
       height: 70vh;
     }
 }
+
+@media screen and (max-width: 690px) {
+  .acct-option-holder {
+    gap: 120px;
+  }
+}
+
 
 @media screen and (max-width: 660px) {
   .icons-post-btn-container {
