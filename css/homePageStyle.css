@@ -71,7 +71,11 @@
 
 
 .main-content-navbar {
+  position: fixed;
+  z-index: 100;
+  backdrop-filter: blur(20px);
   font-family: "Libre Franklin", sans-serif;
+  width: 48%;
   height: 20vh;
   border-bottom: 1px solid #dadce0;
   padding: 1em 1em 0 1em;
@@ -109,6 +113,7 @@
 }
 
 .whats-happening-container {
+  margin-top: 6em;
   display: flex;
   gap: 10px;
   padding: 0.5em 1em;
@@ -336,6 +341,9 @@
 }
 
 .right-sidebar-navbar {
+  position: fixed;
+  z-index: 100;
+  backdrop-filter: blur(20px);
   margin: 0.3em 0;
   height: 8vh;
 }
@@ -378,7 +386,7 @@
   padding: 0.7em 1em;
   background-color: rgba(209, 207, 207, 0.208);
   border-radius: 15px;
-  margin-bottom: 10px;
+  margin: 40px 0 10px 0;
 }
 
 .bold-sub-head {
@@ -628,6 +636,10 @@
 }
 
 @media screen and (max-width: 710px) {
+  .main-content-navbar {
+    width: 100%;
+  }
+
   .right-sidebar {
     display: none;
   }
@@ -757,6 +769,14 @@
 }
 
 @media screen and (max-width: 460px) {
+
+  .nav-two-head-options {
+    display: flex;
+    justify-content: space-around;
+    padding-right: 80px;
+    /* gap: 80px; */
+  }
+
   .left-sidebar-content {
     padding: 1em 0.5em 1em 1.5em;
   }
