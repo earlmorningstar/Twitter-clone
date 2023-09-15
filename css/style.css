@@ -158,6 +158,143 @@ body {
     justify-content: center;
 }
 
+@media screen and (max-width: 940px) {
+    .page-head-text {
+        font-size: 45px;
+    }
+
+    .x-axis-line {
+        width: 25%;
+    }
+
+    .footer-list-i {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+    }
+}
+
+@media screen and (max-width: 855px) {
+    .page-head-text {
+        font-size: 40px;
+    }
+
+    .x-axis-line {
+        width: 27%;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .page-head-text {
+        font-size: 35px;
+    }
+
+    .x-axis-line {
+        width: 31%;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .footer-list-i {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .footer-list-i > span {
+        margin-bottom: 5px;
+    }
+
+    .x-axis-line {
+        width: 33%;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    .x-part-and-sign-up {
+        flex-direction: column;
+    }
+
+    body {
+        padding: 3em 2em 1em 2em;
+    }
+
+    .x-logo-div {
+        align-items: start;
+        justify-content: start;
+        padding-top: 0;
+        width: 50%;
+        height: 80px;
+        margin-bottom: 50px;
+    }
+
+    .welcome-page-btn {
+        width: 100%;
+    }
+
+    .x-part-and-sign-up {
+        width: 100%;
+    }
+
+    .sign-up-part {
+        width: 80%;
+    }
+
+    .x-axis-line {
+        width: 35%;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .x-axis-line {
+        width: 37%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .x-axis-line {
+        width: 39%;
+    }
+}
+
+@media screen and (max-width: 540px){
+    .x-axis-line {
+        width: 47%;
+    }
+
+    .already-text {
+        font-size: 13px;
+    }
+
+    .footer-list-i {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (max-width: 520px){
+    .x-axis-line {
+        width: 49%;
+    }
+}
+
+@media screen and (max-width: 470px){
+
+    .welcome-page-btn {
+        width: 100%;
+    }
+    .or-and-x-axis-line {
+        display: none;
+    }
+    .sign-up-part {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .already-text {
+        font-size: 11px;
+    }
+    .footer-list-i {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
 /* font-family: 'Manrope', sans-serif; */
 /* font-family: 'Poppins', sans-serif; */
 /* font-family: 'Noto Sans SC', sans-serif; */
