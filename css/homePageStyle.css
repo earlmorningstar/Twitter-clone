@@ -13,7 +13,6 @@
 
 .left-sidebar-container {
   position: fixed;
-  /* z-index: 20; */
   width: 14%;
   overflow-y: scroll;
   background-color: #ffffff;
@@ -514,11 +513,17 @@
   gap: 2px;
 }
 
-@media screen and (max-width: 1206px) {
-  .whats-happening-container {
-    /* margin-top: 8em; */
+.following-post-container {
+  display: none;
 }
+
+/* @media screen and (max-width: 1206px) {
+  .main-content-container {
+  margin-left: 165px;
+  width: 48%;
 }
+} */
+
 
 @media screen and (max-width: 1000px) {
 .user-acct-details {
