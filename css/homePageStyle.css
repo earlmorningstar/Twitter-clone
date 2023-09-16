@@ -337,6 +337,8 @@
 }
 
 .right-sidebar {
+  /* overflow-y: scroll;
+  height: fit-content; */
   width: 38%;
   background-color: #ffffff;
   padding: 0 2.2em 0 1.5em;
