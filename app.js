@@ -5,84 +5,75 @@ const userName = document.getElementById("name");
 const userPassword = document.getElementById("password");
 const errMessages = document.getElementById("errInfo");
 
+logInForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  let errMessages = [];
 
-logInForm.addEventListener("submit", (e)  => {
+  if (userName.value === "" || userName.value == null) {
+    errMessages.textContent("Field cannot be blank");
+    errMessages.style.display = "block";
+  } else {
+    errMessages.textContent = "";
+    errMessages.style.display = "none";
+  }
+
+  if (userPassword.value === "" || userPassword.value == null) {
+    errMessages.textContent("Please input your password");
+    errMessages.style.display = "block";
+  } else {
+    errMessages.textContent = "";
+    errMessages.style.display = "none";
+  }
+
+  if (userPassword.value.length <= 6) {
+    errMessages.textContent("Password cannot be less than 6 characters");
+    errMessages.style.display = "block";
+  } else {
+    errMessages.textContent = "";
+    errMessages.style.display = "none";
+  }
+
+  if (userPassword.value.length >= 20) {
+    errMessages.textContent("Password cannot be 20 characters or more");
+    errMessages.style.display = "block";
+  } else {
+    errMessages.textContent = "";
+    errMessages.style.display = "none";
+  }
+
+  if (userPassword.value === "password" || userPassword.value === "Password") {
+    errMessages.textContent("Password cannot be password");
+    errMessages.style.display = "block";
+  } else {
+    errMessages.textContent = "";
+    errMessages.style.display = "none";
+  }
+
+  if (errMessages.length > 0) {
     e.preventDefault();
-    let errMessages = [];
+    errMessages.innerText = errMessages.join(", ");
+  }
 
-
-    if(userName.value == null || userName.value === ""){
-        errMessages.push("Field cannot be blank");
-    }
-
-    if(userName.value === "" || userPassword.value  === ""){
-        errMessages.push("Login details are required");
-    }
-
-    if(userPassword.value == null || userPassword.value === ""){
-        errMessages.push("please, input your password");
-    }
-
-    if(userPassword.value.length <= 6){
-        errMessages.push("Password cannot be less than 6 characters");
-    }
-
-    if(userPassword.value.length >= 20){
-        errMessages.push("Password cannot be 20 characters or more");
-    }
-    
-    if(userPassword.value === 'password' || userPassword.value === 'Password'){
-        errMessages.push("Password cannot be password");
-    }
-
-    if(errMessages > 0){
-        e.preventDefault();
-        errMessages.innerText = errMessages.join(", ");
-    }
-})
-
-
-
-// Get references to form elements and error message
-var signInForm = document.getElementById("signin-form");
-var usernameInput = document.getElementById("username");
-var passwordInput = document.getElementById("password");
-var errorMessage = document.getElementById("error-message");
-
-// Add a submit event listener to the form
-signInForm.addEventListener("submit", function (event) {
-    // Prevent the form from submitting
-    event.preventDefault();
-
-    // Check if the username and password inputs are empty
-    if (usernameInput.value.trim() === "" || passwordInput.value.trim() === "") {
-        // Display an error message
-        errorMessage.textContent = "Username and password are required.";
-    } else {
-        // Clear any previous error message
-        errorMessage.textContent = "";
-
-        // You can submit the form here if validation passes
-        signInForm.submit();
-    }
+  // logInForm.submit();
 });
 
+// Add a submit event listener to the form
+// logInForm.addEventListener("submit", function (event) {
+//     // Prevent the form from submitting
+//     event.preventDefault();
 
+//     // Check if the username and password inputs are empty
+//     if (userName.value.trim() === "" || userPassword.value.trim() === "") {
+//         // Display an error message
+//         errMessages.textContent = "Username and password are required.";
+//     } else {
+//         // Clear any previous error message
+//         errMessages.textContent = "";
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//         // You can submit the form here if validation passes
+//         logInForm.submit();
+//     }
+// });
 
 // ----FOR YOU AND FOLLOWING CLICK BUTTON SECTION----
 
