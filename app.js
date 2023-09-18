@@ -7,55 +7,94 @@ const errMessages = document.getElementById("errInfo");
 
 logInForm.addEventListener("submit", (e) => {
   e.preventDefault();
-  let errMessages = [];
+  let errorMessages = [];
 
   if (userName.value === "" || userName.value == null) {
-    errMessages.textContent("Field cannot be blank");
-    errMessages.style.display = "block";
-  } else {
-    errMessages.textContent = "";
-    errMessages.style.display = "none";
+    errorMessages.push("Field cannot be blank");
   }
 
   if (userPassword.value === "" || userPassword.value == null) {
-    errMessages.textContent("Please input your password");
-    errMessages.style.display = "block";
-  } else {
-    errMessages.textContent = "";
-    errMessages.style.display = "none";
+    errorMessages.push("Please input your password");
   }
 
   if (userPassword.value.length <= 6) {
-    errMessages.textContent("Password cannot be less than 6 characters");
-    errMessages.style.display = "block";
-  } else {
-    errMessages.textContent = "";
-    errMessages.style.display = "none";
+    errorMessages.push("Password cannot be less than 6 characters");
   }
 
   if (userPassword.value.length >= 20) {
-    errMessages.textContent("Password cannot be 20 characters or more");
-    errMessages.style.display = "block";
-  } else {
-    errMessages.textContent = "";
-    errMessages.style.display = "none";
+    errorMessages.push("Password cannot be 20 characters or more");
   }
 
   if (userPassword.value === "password" || userPassword.value === "Password") {
-    errMessages.textContent("Password cannot be password");
+    errorMessages.push("Password cannot be 'password'");
+  }
+
+  if (errorMessages.length > 0) {
+    errMessages.textContent = errorMessages.join(", ");
     errMessages.style.display = "block";
   } else {
     errMessages.textContent = "";
     errMessages.style.display = "none";
+    logInForm.submit();
   }
-
-  if (errMessages.length > 0) {
-    e.preventDefault();
-    errMessages.innerText = errMessages.join(", ");
-  }
-
-  // logInForm.submit();
 });
+
+// const logInForm = document.getElementById("signInForm");
+// const userName = document.getElementById("name");
+// const userPassword = document.getElementById("password");
+// const errMessages = document.getElementById("errInfo");
+
+// logInForm.addEventListener("submit", (e) => {
+//   e.preventDefault();
+//   let errMessages = [];
+
+//   if (userName.value === "" || userName.value == null) {
+//     errMessages.textContent("Field cannot be blank");
+//     errMessages.style.display = "block";
+//   } else {
+//     errMessages.textContent = "";
+//     errMessages.style.display = "none";
+//   }
+
+//   if (userPassword.value === "" || userPassword.value == null) {
+//     errMessages.textContent("Please input your password");
+//     errMessages.style.display = "block";
+//   } else {
+//     errMessages.textContent = "";
+//     errMessages.style.display = "none";
+//   }
+
+//   if (userPassword.value.length <= 6) {
+//     errMessages.textContent("Password cannot be less than 6 characters");
+//     errMessages.style.display = "block";
+//   } else {
+//     errMessages.textContent = "";
+//     errMessages.style.display = "none";
+//   }
+
+//   if (userPassword.value.length >= 20) {
+//     errMessages.textContent("Password cannot be 20 characters or more");
+//     errMessages.style.display = "block";
+//   } else {
+//     errMessages.textContent = "";
+//     errMessages.style.display = "none";
+//   }
+
+//   if (userPassword.value === "password" || userPassword.value === "Password") {
+//     errMessages.textContent("Password cannot be password");
+//     errMessages.style.display = "block";
+//   } else {
+//     errMessages.textContent = "";
+//     errMessages.style.display = "none";
+//   }
+
+//   if (errMessages.length > 0) {
+//     e.preventDefault();
+//     errMessages.innerText = errMessages.join(", ");
+//   }
+
+//   // logInForm.submit();
+// });
 
 // Add a submit event listener to the form
 // logInForm.addEventListener("submit", function (event) {
