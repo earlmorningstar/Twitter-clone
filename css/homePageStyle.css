@@ -64,7 +64,7 @@
 }
 
 .main-content-container {
-  margin-left: 142px;
+  padding-left: 142px;
   width: 48%;
   flex-grow: 1;
   background-color: #ffffff;
@@ -79,7 +79,8 @@
   font-family: "Libre Franklin", sans-serif;
   width: 48%;
   height: 20vh;
-  border-bottom: 1px solid #dadce0;
+  border-bottom: 0.5px solid #dadce0;
+  border-right: 0.5px solid #dadce0;
   padding: 1em 1em 0 1em;
 }
 
@@ -115,7 +116,7 @@
 }
 
 .whats-happening-container {
-  margin-top: 7em;
+  margin-top: 6.5em;
   display: flex;
   gap: 10px;
   padding: 0.5em 1em;
@@ -527,11 +528,23 @@
   display: none;
 }
 
-/* @media screen and (max-width: 1206px) {
+/* @media screen and (max-width: 1200px) {
   .main-content-container {
-  margin-left: 165px;
-  width: 48%;
+
 }
+
+.whats-happening-container {
+  
+}
+
+.acct-option-holder {
+  
+}
+
+.user-acct-details {
+  
+}
+
 } */
 
 

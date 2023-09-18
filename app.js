@@ -1,50 +1,90 @@
-// const textArea = document.getElementById("post-desk");
+// -----SIGN IN PURE JS STARTS HERE-----
 
-// textArea.addEventListener("input", ()=> {
-//     textArea.classList.add("no-outline");
-// })
+const logInForm = document.getElementById("signInForm");
+const userName = document.getElementById("name");
+const userPassword = document.getElementById("password");
+const errMessages = document.getElementById("errInfo");
 
-// const forYouClick = document.querySelector('#for-you');
-// const followingClick = document.querySelector('#following');
 
-// document.addEventListener("DOMContentLoaded", function () {
-//     // Get all feed-option elements
-//     let feedOptions = document.querySelectorAll(".feed-option");
+logInForm.addEventListener("submit", (e)  => {
+    e.preventDefault();
+    let errMessages = [];
 
-//     // Add a click event listener to each feed-option element
-//     feedOptions.forEach(function (option) {
-//         option.addEventListener("click", function () {
-//             // Remove 'active' class from all feed-options
-//             feedOptions.forEach(function (opt) {
-//                 opt.classList.remove("active");
-//             });
 
-//             // Add 'active' class to the clicked feed-option
-//             this.classList.add("active");
+    if(userName.value == null || userName.value === ""){
+        errMessages.push("Field cannot be blank");
+    }
 
-//             // Get the target data attribute (either "for-you" or "following")
-//             let target = this.getAttribute("data-target");
+    if(userName.value === "" || userPassword.value  === ""){
+        errMessages.push("Login details are required");
+    }
 
-//             // Hide all post containers
-//             let postContainers = document.querySelectorAll(".for-you-post-container, .following-post-container");
-//             postContainers.forEach(function (container) {
-//                 container.style.display = "none";
-//             });
+    if(userPassword.value == null || userPassword.value === ""){
+        errMessages.push("please, input your password");
+    }
 
-//             // Show the post container corresponding to the clicked option
-//             let selectedContainer = document.querySelector("." + target + "-post-container");
-//             if (selectedContainer) {
-//                 selectedContainer.style.display = "block";
-//             }
-//         });
-//     });
+    if(userPassword.value.length <= 6){
+        errMessages.push("Password cannot be less than 6 characters");
+    }
 
-//     // Initially, trigger a click on the "For you" span to display its content
-//     let forYouOption = document.querySelector(".feed-option[data-target='for-you']");
-//     if (forYouOption) {
-//         forYouOption.click();
-//     }
-// });
+    if(userPassword.value.length >= 20){
+        errMessages.push("Password cannot be 20 characters or more");
+    }
+    
+    if(userPassword.value === 'password' || userPassword.value === 'Password'){
+        errMessages.push("Password cannot be password");
+    }
+
+    if(errMessages > 0){
+        e.preventDefault();
+        errMessages.innerText = errMessages.join(", ");
+    }
+})
+
+
+
+// Get references to form elements and error message
+var signInForm = document.getElementById("signin-form");
+var usernameInput = document.getElementById("username");
+var passwordInput = document.getElementById("password");
+var errorMessage = document.getElementById("error-message");
+
+// Add a submit event listener to the form
+signInForm.addEventListener("submit", function (event) {
+    // Prevent the form from submitting
+    event.preventDefault();
+
+    // Check if the username and password inputs are empty
+    if (usernameInput.value.trim() === "" || passwordInput.value.trim() === "") {
+        // Display an error message
+        errorMessage.textContent = "Username and password are required.";
+    } else {
+        // Clear any previous error message
+        errorMessage.textContent = "";
+
+        // You can submit the form here if validation passes
+        signInForm.submit();
+    }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ----FOR YOU AND FOLLOWING CLICK BUTTON SECTION----
 
 document.addEventListener("DOMContentLoaded", function () {
   // This code runs when the HTML content of your webpage has fully loaded

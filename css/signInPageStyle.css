@@ -9,7 +9,7 @@ body {
   align-items: center;
 }
 
-.navbar {
+.top-bar {
   display: flex;
   gap: 200px;
   width: 100%;
