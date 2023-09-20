@@ -9,7 +9,7 @@ body {
   align-items: center;
 }
 
-.errorInfo {
+#errInfo {
   display: none;
   font-family: "Poppins", sans-serif;
   text-align: center;

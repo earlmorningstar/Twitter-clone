@@ -1,119 +1,3 @@
-// -----SIGN IN PURE JS STARTS HERE-----
-
-const logInForm = document.getElementById("signInForm");
-const userName = document.getElementById("name");
-const userPassword = document.getElementById("password");
-const errMessages = document.getElementById("errInfo");
-
-logInForm.addEventListener("submit", (e) => {
-  e.preventDefault();
-  let errorMessages = [];
-
-  if (userName.value === "" || userName.value == null) {
-    errorMessages.push("Field cannot be blank");
-  }
-
-  if (userPassword.value === "" || userPassword.value == null) {
-    errorMessages.push("Please input your password");
-  }
-
-  if (userPassword.value.length <= 6) {
-    errorMessages.push("Password cannot be less than 6 characters");
-  }
-
-  if (userPassword.value.length >= 20) {
-    errorMessages.push("Password cannot be 20 characters or more");
-  }
-
-  if (userPassword.value === "password" || userPassword.value === "Password") {
-    errorMessages.push("Password cannot be 'password'");
-  }
-
-  if (errorMessages.length > 0) {
-    errMessages.textContent = errorMessages.join(", ");
-    errMessages.style.display = "block";
-  } else {
-    errMessages.textContent = "";
-    errMessages.style.display = "none";
-    logInForm.submit();
-  }
-});
-
-// const logInForm = document.getElementById("signInForm");
-// const userName = document.getElementById("name");
-// const userPassword = document.getElementById("password");
-// const errMessages = document.getElementById("errInfo");
-
-// logInForm.addEventListener("submit", (e) => {
-//   e.preventDefault();
-//   let errMessages = [];
-
-//   if (userName.value === "" || userName.value == null) {
-//     errMessages.textContent("Field cannot be blank");
-//     errMessages.style.display = "block";
-//   } else {
-//     errMessages.textContent = "";
-//     errMessages.style.display = "none";
-//   }
-
-//   if (userPassword.value === "" || userPassword.value == null) {
-//     errMessages.textContent("Please input your password");
-//     errMessages.style.display = "block";
-//   } else {
-//     errMessages.textContent = "";
-//     errMessages.style.display = "none";
-//   }
-
-//   if (userPassword.value.length <= 6) {
-//     errMessages.textContent("Password cannot be less than 6 characters");
-//     errMessages.style.display = "block";
-//   } else {
-//     errMessages.textContent = "";
-//     errMessages.style.display = "none";
-//   }
-
-//   if (userPassword.value.length >= 20) {
-//     errMessages.textContent("Password cannot be 20 characters or more");
-//     errMessages.style.display = "block";
-//   } else {
-//     errMessages.textContent = "";
-//     errMessages.style.display = "none";
-//   }
-
-//   if (userPassword.value === "password" || userPassword.value === "Password") {
-//     errMessages.textContent("Password cannot be password");
-//     errMessages.style.display = "block";
-//   } else {
-//     errMessages.textContent = "";
-//     errMessages.style.display = "none";
-//   }
-
-//   if (errMessages.length > 0) {
-//     e.preventDefault();
-//     errMessages.innerText = errMessages.join(", ");
-//   }
-
-//   // logInForm.submit();
-// });
-
-// Add a submit event listener to the form
-// logInForm.addEventListener("submit", function (event) {
-//     // Prevent the form from submitting
-//     event.preventDefault();
-
-//     // Check if the username and password inputs are empty
-//     if (userName.value.trim() === "" || userPassword.value.trim() === "") {
-//         // Display an error message
-//         errMessages.textContent = "Username and password are required.";
-//     } else {
-//         // Clear any previous error message
-//         errMessages.textContent = "";
-
-//         // You can submit the form here if validation passes
-//         logInForm.submit();
-//     }
-// });
-
 // ----FOR YOU AND FOLLOWING CLICK BUTTON SECTION----
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -183,5 +67,58 @@ document.addEventListener("DOMContentLoaded", function () {
     // This code automatically triggers a click on the "For you" option when the page loads
     // It ensures that some content is displayed right from the start
     forYouOption.click();
+  }
+});
+
+// ----FOR YOU AND FOLLOWING CLICK BUTTON SECTION ENDS HERE----
+
+// -----SIGN IN PURE JS STARTS HERE-----
+
+const logInForm = document.getElementById("signInForm");
+const userName = document.getElementById("name");
+const userPassword = document.getElementById("password");
+const errMessages = document.getElementById("errInfo");
+const logInEmail = "earlmorningstar@gmail.com";
+const logInPassword = "xclonepassword";
+
+logInForm.addEventListener("submit", (e) => {
+  let errorMessages = [];
+
+  if (userName.value === "" || userName.value == null) {
+    errorMessages.push("Username field cannot be blank");
+  }
+
+  if (userPassword.value === "" || userPassword.value == null) {
+    errorMessages.push("Input your password");
+  }
+
+  if (userPassword.value.length <= 6) {
+    errorMessages.push("Password cannot be less than 6 characters");
+  }
+
+  if (userPassword.value.length >= 20) {
+    errorMessages.push("Password cannot be 20 characters or more");
+  }
+
+  if (userPassword.value === "password" || userPassword.value === "Password") {
+    errorMessages.push("Password cannot be 'password'");
+  }
+
+//   if(userName.value !== logInEmail.value){
+//     errMessages.push("Incorrect email or password");
+//   }
+
+//   if(userPassword.value !== logInPassword.value){
+//     errMessages.push("Incorrect email or password");
+//   }
+
+  if (errorMessages.length > 0) {
+    e.preventDefault();
+    errMessages.innerText = errorMessages.join(", ");
+    errMessages.style.display = "block";
+  } else {
+    errMessages.innerText = "";
+    errMessages.style.display = "none";
+    logInForm.submit();
   }
 });
