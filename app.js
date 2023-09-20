@@ -1,4 +1,4 @@
-// ----FOR YOU AND FOLLOWING CLICK BUTTON SECTION----
+// ----FOR YOU AND FOLLOWING CLICK BUTTON SECTION START HERE----
 
 document.addEventListener("DOMContentLoaded", function () {
   // This code runs when the HTML content of your webpage has fully loaded
@@ -80,6 +80,7 @@ const userPassword = document.getElementById("password");
 const errMessages = document.getElementById("errInfo");
 const logInEmail = "earlmorningstar@gmail.com";
 const logInPassword = "xclonepassword";
+const homePage = "/homePage.html";
 
 logInForm.addEventListener("submit", (e) => {
   let errorMessages = [];
@@ -104,13 +105,9 @@ logInForm.addEventListener("submit", (e) => {
     errorMessages.push("Password cannot be 'password'");
   }
 
-//   if(userName.value !== logInEmail.value){
-//     errMessages.push("Incorrect email or password");
-//   }
-
-//   if(userPassword.value !== logInPassword.value){
-//     errMessages.push("Incorrect email or password");
-//   }
+  if (userName.value !== logInEmail || userPassword.value !== logInPassword) {
+    errorMessages.push("Incorrect email or password");
+  }
 
   if (errorMessages.length > 0) {
     e.preventDefault();
@@ -119,6 +116,11 @@ logInForm.addEventListener("submit", (e) => {
   } else {
     errMessages.innerText = "";
     errMessages.style.display = "none";
-    logInForm.submit();
+    errorMessages = [];
+    e.preventDefault();
+    window.location.href = homePage;
+    // logInForm.submit();
   }
 });
+
+// -----SIGN IN PURE JS END HERE-----
