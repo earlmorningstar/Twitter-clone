@@ -77,12 +77,14 @@ document.addEventListener("DOMContentLoaded", function () {
 const logInForm = document.getElementById("signInForm");
 const userName = document.getElementById("name");
 const userPassword = document.getElementById("password");
-const errMessages = document.getElementById("errInfo");
+const errMessages = document.getElementById("errMsg");
+const successMessage = document.getElementById("successMsg");
 const logInEmail = "earlmorningstar@gmail.com";
 const logInPassword = "xclonepassword";
 const homePage = "/homePage.html";
 
 logInForm.addEventListener("submit", (e) => {
+    e.preventDefault();
   let errorMessages = [];
 
   if (userName.value === "" || userName.value == null) {
@@ -117,9 +119,9 @@ logInForm.addEventListener("submit", (e) => {
     errMessages.innerText = "";
     errMessages.style.display = "none";
     errorMessages = [];
+    successMessage.innerText = "Login successful! Redirecting..."
     e.preventDefault();
     window.location.href = homePage;
-    // logInForm.submit();
   }
 });
 
