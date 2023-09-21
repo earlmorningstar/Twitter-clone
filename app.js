@@ -79,6 +79,7 @@ const userName = document.getElementById("name");
 const userPassword = document.getElementById("password");
 const errMessages = document.getElementById("errMsg");
 const sucMessage = document.getElementById("sucMsg");
+const genericError = document.getElementById("genericErrMsg");
 const logInEmail = "earlmorningstar@gmail.com";
 const logInPassword = "xclonepassword";
 const homePage = "/homePage.html";
@@ -140,11 +141,10 @@ logInForm.addEventListener("submit", (e) => {
     errMessages.innerText = "";
     errMessages.style.display = "none";
     errorMessages = [];
-    e.preventDefault();
     sucMessage.innerText = successMessage;
     setTimeout(function () {
       window.location.href = homePage;
-    }, 1500);
+    }, 1000);
   }
 });
 
