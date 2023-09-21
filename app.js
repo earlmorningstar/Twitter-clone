@@ -74,82 +74,79 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // -----SIGN IN PURE JS STARTS HERE-----
 
-// const logInForm = document.getElementById("signInForm");
-// const userName = document.getElementById("name");
-// const userPassword = document.getElementById("password");
-// const errMessages = document.getElementById("errMsg");
-// const sucMessage = document.getElementById("sucMsg");
-// const genericError = document.getElementById("genericErrMsg");
-// const logInEmail = "earlmorningstar@gmail.com";
-// const logInPassword = "xclonepassword";
-// const homePage = "/homePage.html";
+const logInForm = document.getElementById("signInForm");
+const userName = document.getElementById("name");
+const userPassword = document.getElementById("password");
+const errMessages = document.getElementById("errMsg");
+const sucMessage = document.getElementById("sucMsg");
+const genericError = document.getElementById("genericErrMsg");
+const logInEmail = "earlmorningstar@gmail.com";
+const logInPassword = "xclonepassword";
+const homePage = "/homePage.html";
 
-// logInForm.addEventListener("submit", (e) => {
-//   e.preventDefault();
-//   let errorMessages = [];
-//   let successMessage = [];
+logInForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  let errorMessages = [];
+  let successMessage = [];
 
-//   if (userName.value === "" || userName.value == null) {
-//     errorMessages.push("Username field cannot be blank");
-//   }
+  if (userName.value === "" || userName.value == null) {
+    errorMessages.push("Username field cannot be blank");
+  }
 
-//   if (userPassword.value === "" || userPassword.value == null) {
-//     errorMessages.push("Input your password");
-//   }
+  if (userPassword.value === "" || userPassword.value == null) {
+    errorMessages.push("Input your password");
+  } else if (userPassword.value.length <= 6) {
+    errorMessages.push("Password cannot be less than 6 characters");
+  }
 
-//   if (userPassword.value.length <= 6) {
-//     errorMessages.push("Password cannot be less than 6 characters");
-//   }
+  if (userPassword.value.length >= 20) {
+    errorMessages.push("Password cannot be 20 characters or more");
+  }
 
-//   if (userPassword.value.length >= 20) {
-//     errorMessages.push("Password cannot be 20 characters or more");
-//   }
+  if (userPassword.value === "password" || userPassword.value === "Password") {
+    errorMessages.push("Password cannot be 'password'");
+  }
 
-//   if (userPassword.value === "password" || userPassword.value === "Password") {
-//     errorMessages.push("Password cannot be 'password'");
-//   }
+  if (userName.value == null && userPassword.value == null) {
+    errorMessages.push("Fields cannot be blank");
+  }
 
-//   if (userName.value == null && userPassword.value == null) {
-//     errorMessages.push("Fields cannot be blank");
-//   }
+  if (userName.value === "" && userPassword.value === "") {
+    errorMessages.push("Fields cannot be blank");
+  }
 
-//   if (userName.value === "" && userPassword.value === "") {
-//     errorMessages.push("Fields cannot be blank");
-//   }
+  if (userName.value !== logInEmail) {
+    errorMessages.push("Unregistered Email");
+  }
 
-//   if (userName.value !== logInEmail) {
-//     errorMessages.push("Unregistered Email");
-//   }
+  if (userPassword.value !== logInPassword) {
+    errorMessages.push("Invalid password");
+  }
 
-//   if (userPassword.value !== logInPassword) {
-//     errorMessages.push("Invalid password");
-//   }
+  if (userName.value !== logInEmail || userPassword.value !== logInPassword) {
+    errorMessages.push("Incorrect email or password");
+  }
 
-//   if (userName.value !== logInEmail || userPassword.value !== logInPassword) {
-//     errorMessages.push("Incorrect email or password");
-//   }
+  if (userName.value === logInEmail && userPassword.value === logInPassword) {
+    successMessage.push("Login successful! Redirecting...");
+  }
 
-//   if (userName.value === logInEmail && userPassword.value === logInPassword) {
-//     successMessage.push("Login successful! Redirecting...");
-//   }
-
-//   if (errorMessages.length > 0) {
-//     e.preventDefault();
-//     errMessages.innerText = errorMessages.join(", ");
-//     errMessages.style.display = "block";
-//   } else {
-//     errMessages.innerText = "";
-//     errMessages.style.display = "none";
-//     errorMessages = [];
-//     sucMessage.innerText = successMessage;
-//     setTimeout(function () {
-//       window.location.href = homePage;
-//     }, 1000);
-//   }
-// });
+  if (errorMessages.length > 0) {
+    e.preventDefault();
+    errMessages.innerText = errorMessages.join(", ");
+    errMessages.style.display = "block";
+  } else {
+    errMessages.innerText = "";
+    errMessages.style.display = "none";
+    errorMessages = [];
+    sucMessage.innerText = successMessage;
+    setTimeout(function () {
+      window.location.href = homePage;
+    }, 1000);
+  }
+});
 
 // -----SIGN IN PURE JS END HERE-----
-
 
 // Confirmation---
 
@@ -185,7 +182,6 @@ document.addEventListener("DOMContentLoaded", function () {
 //   let unregisteredErrorMsg = [];
 //   let invalidErrorMsg = [];
 //   let incorrectErrMsg = [];
-
 
 //   if (userName.value === "" || userName.value == null) {
 //     errorMessages.push("Username field cannot be blank");
@@ -246,78 +242,75 @@ document.addEventListener("DOMContentLoaded", function () {
 //   }
 // });
 
-
-
 // --------------------------------------------------
 
-const logInForm = document.getElementById("signInForm");
-const userName = document.getElementById("name");
-const userPassword = document.getElementById("password");
-const errMessages = document.getElementById("errMsg");
-const sucMessage = document.getElementById("sucMsg");
-const logInEmail = "earlmorningstar@gmail.com";
-const logInPassword = "xclonepassword";
-const homePage = "/homePage.html";
+// const logInForm = document.getElementById("signInForm");
+// const userName = document.getElementById("name");
+// const userPassword = document.getElementById("password");
+// const errMessages = document.getElementById("errMsg");
+// const sucMessage = document.getElementById("sucMsg");
+// const logInEmail = "earlmorningstar@gmail.com";
+// const logInPassword = "xclonepassword";
+// const homePage = "/homePage.html";
 
-// Create an array of error message elements
-const errorElements = [
-  document.getElementById("genericErrMsg"),
-  document.getElementById("inputPasswordMsg"),
-  document.getElementById("lessThan6Msg"),
-  document.getElementById("moreThan20Msg"),
-  document.getElementById("cantBePassMsg"),
-  document.getElementById("fieldCannotBeMsg"),
-  document.getElementById("unregisteredMsg"),
-  document.getElementById("invalidMsg"),
-  document.getElementById("incorrectMsg")
-];
+// // Create an array of error message elements
+// const errorElements = [
+//   document.getElementById("genericErrMsg"),
+//   document.getElementById("inputPasswordMsg"),
+//   document.getElementById("lessThan6Msg"),
+//   document.getElementById("moreThan20Msg"),
+//   document.getElementById("cantBePassMsg"),
+//   document.getElementById("fieldCannotBeMsg"),
+//   document.getElementById("unregisteredMsg"),
+//   document.getElementById("invalidMsg"),
+//   document.getElementById("incorrectMsg")
+// ];
 
-logInForm.addEventListener("submit", (e) => {
-  e.preventDefault();
-  // Clear all error messages
-  errorElements.forEach((element) => {
-    element.innerText = "";
-  });
+// logInForm.addEventListener("submit", (e) => {
+//   e.preventDefault();
+//   // Clear all error messages
+//   errorElements.forEach((element) => {
+//     element.innerText = "";
+//   });
 
-  let errorMessages = [];
-  let successMessage = "";
+//   let errorMessages = [];
+//   let successMessage = "";
 
-  if (userName.value === "") {
-    errorMessages.push("Username field cannot be blank");
-  }
+//   if (userName.value === "") {
+//     errorMessages.push("Username field cannot be blank");
+//   }
 
-  if (userPassword.value === "") {
-    errorMessages.push("Input your password");
-  } else if (userPassword.value.length <= 6) {
-    errorMessages.push("Password cannot be less than 6 characters");
-  } else if (userPassword.value.length >= 20) {
-    errorMessages.push("Password cannot be 20 characters or more");
-  } else if (userPassword.value === "password" || userPassword.value === "Password") {
-    errorMessages.push("Password cannot be 'password'");
-  }
+//   if (userPassword.value === "") {
+//     errorMessages.push("Input your password");
+//   } else if (userPassword.value.length <= 6) {
+//     errorMessages.push("Password cannot be less than 6 characters");
+//   } else if (userPassword.value.length >= 20) {
+//     errorMessages.push("Password cannot be 20 characters or more");
+//   } else if (userPassword.value === "password" || userPassword.value === "Password") {
+//     errorMessages.push("Password cannot be 'password'");
+//   }
 
-  if (userName.value === "" && userPassword.value === "") {
-    errorMessages.push("Fields cannot be blank");
-  } else if (userName.value !== logInEmail) {
-    errorMessages.push("Unregistered Email");
-  } else if (userPassword.value !== logInPassword) {
-    errorMessages.push("Invalid password");
-  } else if (userName.value !== logInEmail || userPassword.value !== logInPassword) {
-    errorMessages.push("Incorrect email or password");
-  }
+//   if (userName.value === "" && userPassword.value === "") {
+//     errorMessages.push("Fields cannot be blank");
+//   } else if (userName.value !== logInEmail) {
+//     errorMessages.push("Unregistered Email");
+//   } else if (userPassword.value !== logInPassword) {
+//     errorMessages.push("Invalid password");
+//   } else if (userName.value !== logInEmail || userPassword.value !== logInPassword) {
+//     errorMessages.push("Incorrect email or password");
+//   }
 
-  if (errorMessages.length > 0) {
-    e.preventDefault();
-    errMessages.innerText = errorMessages.join(", ");
-    errMessages.style.display = "block";
-  } else {
-    errMessages.innerText = "";
-    errMessages.style.display = "none";
-    successMessage = "Login successful! Redirecting...";
-    sucMessage.innerText = successMessage;
-    setTimeout(function () {
-      window.location.href = homePage;
-    }, 1000);
-  }
-});
-
+//   if (errorMessages.length > 0) {
+//     e.preventDefault();
+//     errMessages.innerText = errorMessages.join(", ");
+//     errMessages.style.display = "block";
+//   } else {
+//     errMessages.innerText = "";
+//     errMessages.style.display = "none";
+//     successMessage = "Login successful! Redirecting...";
+//     sucMessage.innerText = successMessage;
+//     setTimeout(function () {
+//       window.location.href = homePage;
+//     }, 1000);
+//   }
+// });
