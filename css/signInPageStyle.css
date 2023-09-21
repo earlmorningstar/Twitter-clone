@@ -27,8 +27,8 @@ body {
   /* background-color: green; */
 }
 
-#successMsg {
-  display: none;
+#sucMsg {
+  /* display: none; */
   font-family: "Poppins", sans-serif;
   text-align: center;
   width: 24em;

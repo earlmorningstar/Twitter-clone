@@ -78,8 +78,7 @@ const logInForm = document.getElementById("signInForm");
 const userName = document.getElementById("name");
 const userPassword = document.getElementById("password");
 const errMessages = document.getElementById("errMsg");
-// const genericErrorMsg = document.getElementById("genericErrMsg");
-const successMessage = document.getElementById("successMsg");
+const sucMessage = document.getElementById("sucMsg");
 const logInEmail = "earlmorningstar@gmail.com";
 const logInPassword = "xclonepassword";
 const homePage = "/homePage.html";
@@ -87,6 +86,7 @@ const homePage = "/homePage.html";
 logInForm.addEventListener("submit", (e) => {
   e.preventDefault();
   let errorMessages = [];
+  let successMessage = [];
 
   if (userName.value === "" || userName.value == null) {
     errorMessages.push("Username field cannot be blank");
@@ -128,6 +128,10 @@ logInForm.addEventListener("submit", (e) => {
     errorMessages.push("Incorrect email or password");
   }
 
+  if (userName.value === logInEmail && userPassword.value === logInPassword) {
+    successMessage.push("Login successful! Redirecting...");
+  }
+
   if (errorMessages.length > 0) {
     e.preventDefault();
     errMessages.innerText = errorMessages.join(", ");
@@ -136,9 +140,11 @@ logInForm.addEventListener("submit", (e) => {
     errMessages.innerText = "";
     errMessages.style.display = "none";
     errorMessages = [];
-    successMessage.innerText = "Login successful! Redirecting...";
     e.preventDefault();
-    window.location.href = homePage;
+    sucMessage.innerText = successMessage;
+    setTimeout(function () {
+      window.location.href = homePage;
+    }, 1500);
   }
 });
 
