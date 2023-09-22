@@ -99,7 +99,7 @@ logInForm.addEventListener("submit", (e) => {
   } else if (userName.value === "" || userName.value == null) {
     errorMessages.push("Username field cannot be blank");
   } else if (userName.value !== logInEmail) {
-    errorMessages.push("Unregistered Email");
+    errorMessages.push("Email does not exist");
   } else if (userPassword.value === "" || userPassword.value == null) {
     errorMessages.push("Input your password");
   } else if (userPassword.value.length <= 6) {
