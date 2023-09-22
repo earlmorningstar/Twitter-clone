@@ -106,10 +106,8 @@ logInForm.addEventListener("submit", (e) => {
     errorMessages.push("Password cannot be less than 6 characters");
   } else if (userPassword.value.length >= 20) {
     errorMessages.push("Password cannot be 20 characters or more");
-  } else if (
-    userPassword.value === "password" ||
-    userPassword.value === "Password"
-  ) {
+  } else if (userPassword.value === "password" || userPassword.value === "Password"
+) {
     errorMessages.push("Password cannot be 'password'");
   } else if (userPassword.value !== logInPassword) {
     errorMessages.push("Invalid password! Try again.");
