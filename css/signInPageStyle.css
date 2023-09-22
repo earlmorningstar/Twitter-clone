@@ -9,13 +9,6 @@ body {
   align-items: center;
 }
 
-.both-err-msg {
-  /* display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; */
-}
-
 .errMsg {
   display: none;
   font-family: "Poppins", sans-serif;
@@ -27,7 +20,6 @@ body {
 }
 
 #sucMsg {
-  /* display: none; */
   font-family: "Poppins", sans-serif;
   text-align: center;
   width: 24em;
