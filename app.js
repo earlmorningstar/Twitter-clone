@@ -106,15 +106,13 @@ logInForm.addEventListener("submit", (e) => {
     errorMessages.push("Password cannot be less than 6 characters");
   } else if (userPassword.value.length >= 20) {
     errorMessages.push("Password cannot be 20 characters or more");
-  } else if (userPassword.value === "password" || userPassword.value === "Password"
-) {
+  } else if (userPassword.value === "password" || userPassword.value === "Password") {
     errorMessages.push("Password cannot be 'password'");
   } else if (userPassword.value !== logInPassword) {
     errorMessages.push("Invalid password! Try again.");
   } else if (
     userName.value !== logInEmail ||
-    userPassword.value !== logInPassword
-  ) {
+    userPassword.value !== logInPassword) {
     errorMessages.push("Incorrect email or password");
   }
 
@@ -124,7 +122,7 @@ logInForm.addEventListener("submit", (e) => {
 
   if (errorMessages.length > 0) {
     e.preventDefault();
-    errMessages.innerText = errorMessages.join(", ");
+    errMessages.innerText = errorMessages;
     errMessages.style.display = "block";
   } else {
     errMessages.innerText = "";
